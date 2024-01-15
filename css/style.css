@@ -38,15 +38,13 @@ header {
     z-index: 5001;
 }
 
-.logo2 {
-    display: none;
-}
+
 
 /* partie qui dimensionne le logo et le fait tourner en continu*/
 .logo {
     animation: rotation 5s infinite linear;
     width: 3em;
-    border-radius: 15px;
+    border-radius: 30px;
     margin: 10px 20px;
     position: fixed;
     top: 1px;
