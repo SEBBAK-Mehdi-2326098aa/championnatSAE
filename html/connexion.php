@@ -26,19 +26,21 @@
     </h1><br>
     <nav>
         <ul class="menu">
-            <li><a class="actual" href="#">Presentation</a></li>
-            <li><a href="Departement.html"> Département</a></li>
-            <li><a href="Etudiants.html"> Etudiants</a></li>
-            <li><a href="connexion.html">Connexion</a></li>
+            <li><a href="#">Presentation</a></li>
+            <li><a href="Departement.php"> Département</a></li>
+            <li><a href="Etudiants.php"> Etudiants</a></li>
+            <li><a class="actual"href="#">Connexion</a></li>
         </ul>
     </nav>
     <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
     <ul class="menuDeroulantActif">
-        <li><a class="actual" href="#">Presentation</a></li>
-        <li><a href="Departement.html">Département</a></li>
-        <li><a href="Etudiants.html">Etudiants</a></li>
-        <li><a href="connexion.html">Connexion</a></li>
+        <li><a href="index.php">Presentation</a></li>
+        <li><a href="Departement.php">Département</a></li>
+        <li><a href="Etudiants.php">Etudiants</a></li>
+        <li><a class="actual" href="#">Connexion</a></li>
     </ul>
+
+    <img alt="logo Aix en provence" class="logo" src=../assets/logo_iut.png>
 
     <!--     le formulaire de contact avec les differents champs a remplir et le bouton envoyer-->
     <h2>Posez-nous vos questions !</h2>
@@ -51,7 +53,7 @@
     <input class="entrer" id="sujet" name="sujet" placeholder="objet" type="text"><br>
     <label class="label" for="Contact" id="mess">Message</label>
     <textarea cols="30" id="Contact" placeholder="Dites-nous!" rows="10"></textarea> <br>
-    <button id="envoyer" onclick="myalert()" >
+    <button id="envoyer" onclick="myalert()">
         Envoyer
     </button>
     <em>"Les échecs sont le gymnase de l'esprit"</em>

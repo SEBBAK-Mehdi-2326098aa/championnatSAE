@@ -24,23 +24,21 @@
     <h1> Chess </h1>
     <nav>
         <ul class="menu">
-            <li><a class="actual" href="#">Presentation</a></li>
-            <li><a href="Departement.html"> Département</a></li>
-            <li><a href="Etudiants.html"> Etudiants</a></li>
-            <li><a href="connexion.html">Connexion</a></li>
+            <li><a  href="index.php">Presentation</a></li>
+            <li><a class="actual" href="Departement.html"> Département</a></li>
+            <li><a href="Etudiants.php"> Etudiants</a></li>
+            <li><a href="connexion.php">Connexion</a></li>
         </ul>
     </nav>
     <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
     <ul class="menuDeroulantActif">
-        <li><a class="actual" href="#">Presentation</a></li>
-        <li><a href="Departement.html">Département</a></li>
-        <li><a href="Etudiants.html">Etudiants</a></li>
-        <li><a href="connexion.html">Connexion</a></li>
+        <li><a  href="index.php">Presentation</a></li>
+        <li><a class="actual" href="Departement.html">Département</a></li>
+        <li><a href="Etudiants.php">Etudiants</a></li>
+        <li><a href="connexion.php">Connexion</a></li>
     </ul>
 
-    <img alt="logo de chess.com" class="logo logo1"
-         src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png">
-    <img alt="favicon du code" class="logo logo2" src="https://cdn-icons-png.flaticon.com/512/5462/5462881.png">
+    <img alt="logo Aix en provence" class="logo" src=../assets/logo_iut.png>
 
     <h2 id="titre">Apprends les Échecs !</h2>
 </header>

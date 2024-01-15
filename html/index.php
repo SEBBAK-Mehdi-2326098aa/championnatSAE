@@ -19,24 +19,23 @@
 <header>
     <!--     le header avec le menu hamburger et le menu deroulant-->
     <button aria-label="Changer de thème" id="changementTheme"></button>
-    <h1> IUT Aix </h1>
+    <h1> IUT Aix-en-Provence </h1>
     <nav>
         <ul class="menu">
             <li><a class="actual" href="#">Presentation</a></li>
-            <li><a href="Departement.html"> Département</a></li>
-            <li><a href="Etudiants.html"> Etudiants</a></li>
-            <li><a href="connexion.html">Connexion</a></li>
+            <li><a href="Departement.php"> Département</a></li>
+            <li><a href="Etudiants.php"> Etudiants</a></li>
+            <li><a href="connexion.php">Connexion</a></li>
         </ul>
     </nav>
     <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
     <ul class="menuDeroulantActif">
         <li><a class="actual" href="#">Presentation</a></li>
-        <li><a href="Departement.html">Département</a></li>
-        <li><a href="Etudiants.html">Etudiants</a></li>
-        <li><a href="connexion.html">Connexion</a></li>
+        <li><a href="Departement.php">Département</a></li>
+        <li><a href="Etudiants.php">Etudiants</a></li>
+        <li><a href="connexion.php">Connexion</a></li>
     </ul>
-    <img alt="logo Aix en provence" class="logo"
-         src=../assets/logo_iut.png>
+    <img alt="logo Aix en provence" class="logo" src=../assets/logo_iut.png>
 
 </header>
 <main>

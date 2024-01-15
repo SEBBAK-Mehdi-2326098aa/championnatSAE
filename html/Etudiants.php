@@ -23,18 +23,18 @@
 
     <nav>
         <ul class="menu">
-            <li><a class="actual" href="#">Presentation</a></li>
-            <li><a href="Departement.html"> Département</a></li>
-            <li><a href="Etudiants.html"> Etudiants</a></li>
-            <li><a href="connexion.html">Connexion</a></li>
+            <li><a href="index.php">Presentation</a></li>
+            <li><a href="Departement.php"> Département</a></li>
+            <li><a class="actual" href="Etudiants.html"> Etudiants</a></li>
+            <li><a href="connexion.php">Connexion</a></li>
         </ul>
     </nav>
     <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
     <ul class="menuDeroulantActif">
-        <li><a class="actual" href="#">Presentation</a></li>
-        <li><a href="Departement.html">Département</a></li>
-        <li><a href="Etudiants.html">Etudiants</a></li>
-        <li><a href="connexion.html">Connexion</a></li>
+        <li><a href="index.php">Presentation</a></li>
+        <li><a href="Departement.php">Département</a></li>
+        <li><a class="actual" href="Etudiants.html">Etudiants</a></li>
+        <li><a href="connexion.php">Connexion</a></li>
     </ul>
     <section id="presentation">
         <h1> Les meilleurs joueurs d'Echecs </h1>
@@ -42,10 +42,7 @@
         <p> Il est important de noter d'abord qu'aux Echecs c'est un système de points que l'on nomme ELO qui permet de
             connaitre le niveau d'un joueur. Plus celui-ci est élevé plus le joueur est bon</p>
     </section>
-    <img alt="logo de chess.com" class="logo logo1"
-         src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png">
-    <img alt="favicon du code" class="logo logo2" src="https://cdn-icons-png.flaticon.com/512/5462/5462881.png">
-
+    <img alt="logo Aix en provence" class="logo" src=../assets/logo_iut.png>
 </header>
 <main>
     <!--     le tableau avec les meilleurs Joueurs (sauf SEBBAK Mehdi le roi) -->
