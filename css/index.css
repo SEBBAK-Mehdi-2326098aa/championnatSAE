@@ -21,12 +21,12 @@ h1 {
     font-weight: 900;
     font-size: 7em;
     margin-top: 100px;
-    color: whitesmoke;
+    color: deepskyblue;
     text-shadow: 2px 2px darkslategrey;
 }
 
 body {
-    color: white;
+    color: deepskyblue;
     text-align: center;
     height: fit-content;
 }
@@ -50,7 +50,7 @@ footer {
 }
 
 a {
-    color: darkslategrey;
+    color: deepskyblue;
 }
 
 a:hover {
@@ -82,7 +82,7 @@ ul {
 
 .titrepartie {
     font-size: 6em;
-    color: darkslategrey;
+    color: deepskyblue;
     text-shadow: 2px 2px white;
     display: flex;
     justify-content: center;
