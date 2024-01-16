@@ -1,7 +1,10 @@
-/*affiche l'image en fonction du thème*/
 
 .image2 {
     display: none;
+}
+.titrepartie{
+    padding: 60px;
+    font-size: 3em;
 }
 
 .theme {
@@ -148,6 +151,7 @@ section p:not(.introduction) {
 }
 
 img {
+    width: 40%;
     border-radius: 50px;
     margin-bottom: 10px;
 }

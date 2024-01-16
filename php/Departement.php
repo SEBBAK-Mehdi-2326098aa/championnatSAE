@@ -17,14 +17,14 @@
 
 </head>
 <body>
-<!-- barre de navigation responsive accompagné du logo et du titre-->
+
 
 <?php
 session_start();
 $departement = true;
 include "navbar.php";
 ?>
-<!-- main qui contient les gif et les explications concernants les apprentissags-->
+
 
 <main class="tuto">
     <video controls="controls">

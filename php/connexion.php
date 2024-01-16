@@ -138,12 +138,13 @@ if (!isset($_SESSION["logIn"])) {
         <a href="https://www.bing.com/ck/a?!&&p=cc065442ed407890JmltdHM9MTcwNDg0NDgwMCZpZ3VpZD0yOTVkNTYzOS1mODJjLTZhYzItMWIyZS00NWJmZjlmMTZiNDAmaW5zaWQ9NTY4NQ&ptn=3&ver=2&hsh=3&fclid=295d5639-f82c-6ac2-1b2e-45bff9f16b40&u=a1L21hcHM_Jm1lcGk9MjN-flRvcE9mUGFnZX5NYXBfSW1hZ2UmdHk9MTgmcT1SdWUlMjBNYW51ZWwlMkMlMjAxMzEwMCUyMEFpeC1lbi1Qcm92ZW5jZSZwcG9pcz00My41MjgwNzU1NDkzNzFfNS40NTQzNTM1NTE0MjQxM19SdWUlMjBNYW51ZWwlMkMlMjAxMzEwMCUyMEFpeC1lbi1Qcm92ZW5jZV9-JmNwPTQzLjUyODA3Nn41LjQ1NDM1NCZsdmw9MTYmdj0yJnNWPTEmRk9STT1NSVJF&ntb=1">
             Rue de Manuel - 13100</a></p>
 </section>
-<hr>
-<footer class="pied-contact">
-    <p>Site sur les échecs- Tous droits reviennent au site <a href="https://www.chess.com/fr">chess.com</a></p>
-</footer>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+<footer class="pied-contact">
+    <p>Site sur le département informatique- Tous droits reviennent à Christine Makssoud</a></p>
+
+<hr>
+<a href="formulaire.php" id="formulaire-contact"> Nous Contacter ! </a>
+
+</footer>
 
 </html>

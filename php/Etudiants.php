@@ -43,7 +43,7 @@ include "navbar.php";
 
 if (isset($_SESSION["logIn"])) {
     echo '
-    <form id="formulaire" action="Etudiants.php" class="contact" method="post">
+    <form id="contact"  action="Etudiants.php" class="contact" method="post">
         <h1>Votre avis sur l\'IUT nous intéresse !</h1>
         <label class="label" for="sujet"> Auteur </label><br>
         <input class="entrer" id="email" name="auteur" placeholder="Auteur ?" type="text"><br>
@@ -51,17 +51,28 @@ if (isset($_SESSION["logIn"])) {
         <input class="entrer" id="email" name="note" placeholder="note/5" type="number"><br>
         <label class="label" for="sujet">Message </label><br>
         <textarea class="entrer" id="sujet" name="message" placeholder="que pensez vous de l\'IUT"> </textarea> <br>
-        <input type="submit" id="envoyer" name="envoyer" value="Dorian">
+        <input type="submit" id="envoyer" name="envoyer" value="Partager">
     </form>
     ';
 
     $query = $db->prepare("SELECT note, message, auteur FROM avis ORDER BY id_avis DESC");
     $query->execute();
 
+
+
     foreach ($query->fetchAll() as $avisData) {
         $note = $avisData['note'];
         $message = $avisData['message'];
         $auteur = $avisData['auteur'];
+
+
+        if ($note>5){
+            $note = 5;
+        }
+        else if ($note<5) {
+
+            $note = 0;
+        }
 
         echo '<p class="retour" id="auteur">' . $auteur . '</p> ';
         for ($i = 0; $i < $note; ++$i) {
@@ -87,5 +98,8 @@ else {
 
 </main>
 </body>
-
+<footer>
+    <hr>
+    <a href="formulaire.php" id="formulaire-contact"> Nous Contacter ! </a>
+</footer>
 </html>

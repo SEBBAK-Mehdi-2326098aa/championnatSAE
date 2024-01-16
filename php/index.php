@@ -16,7 +16,11 @@
 </head>
 
 <body>
-
+<?php
+session_start();
+$presentation = true;
+include "navbar.php";
+?>
 
 <h1> IUT Informatique Aix-en-provence</h1>
     
@@ -27,7 +31,7 @@
     <img src=../img/iutinfo.webp>
 
     <section id="contenu">
-            <h2> Le Diplôme </h2>
+            <h2 class ='titrepartie'> Le Diplôme </h2>
             <p>
                 • Le BUT Informatique est un diplôme national dont l'objectif est de former des informaticiens
                 généralistes.
@@ -57,9 +61,8 @@
 
 <hr>
 <footer>
-    <!--     le footer avec les differents liens vers les reseaux sociaux, les liens ne sont pas réelements reliés vers no pages parce que Mehdi est timide-->
-    <section id="reseaux">
-        <h3>Nos Réseaux</h3>
+
+        <a href="formulaire.php" id="formulaire-contact"> Nous Contacter ! </a>
 
 
     </section>
