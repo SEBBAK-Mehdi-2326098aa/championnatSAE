@@ -3,6 +3,12 @@
 session_start();
 include "db.php";
 
+if (isset($_POST["deconnexion"])) {
+    session_destroy();
+    $_SESSION = array();
+
+}
+
 $query = $db->prepare("insert into utilisateur (mail, password) values (:mail , :mdp)");
 if (isset($_POST ["enregistrer"])) {
 
@@ -27,7 +33,7 @@ if (isset($_POST ["enregistrer-verif"])) {
     if ($verif->rowCount() == 1) {
         $donnees = $verif->fetch();
         if ($_POST ["mot_de_passe-verif"] == $donnees["password"]) {
-            echo "gg well play";
+            echo "BIENVENUE VOUS ETES CONNECTE" ;
             $_SESSION ["logIn"] = true;
 
         } else {
@@ -35,7 +41,7 @@ if (isset($_POST ["enregistrer-verif"])) {
         }
     }
     else {
-            echo "mauvais mail" ;
+            echo "Mauvais mail" ;
         }
 
 
@@ -79,7 +85,7 @@ include "navbar.php";
 
 <?php
 if (!isset($_SESSION["logIn"])) {
-  echo ' 
+    echo ' 
 <!--     le formulaire de contact avec les differents champs a remplir et le bouton envoyer-->
 <h2>Inscription !</h2>
 <form action="connexion.php" class="contact" method="post">
@@ -92,7 +98,15 @@ if (!isset($_SESSION["logIn"])) {
 
 </form>
 ';
+}
+  else {
+        echo '
+        <form action="connexion.php" method="post">
+            <input type="submit" name="deconnexion" value="Se déconnecter">
+        </form>
+    ';
     }
+
 ?>
 <form action="connexion.php" class="contact" method="post">
     <h4> Connexion!</h4>

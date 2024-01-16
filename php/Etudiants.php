@@ -56,22 +56,22 @@ include "navbar.php";
 
 
     <?php
-    $query = $db->prepare("SELECT note, message, auteur FROM avis");
+    $query = $db->prepare("SELECT note, message, auteur FROM avis ORDER BY id_avis DESC");
     $query->execute();
 
 
 
     foreach ($query->fetchAll() as $avisData) {
+
         $note = $avisData['note'];
         $message = $avisData['message'];
         $auteur = $avisData['auteur'];
-
-        echo '<p id="auteur">' . $auteur . '</p></div>';
+        echo '<p class = "retour" id="auteur">' . $auteur . '</p> ';
         for ($i = 0; $i < $note; ++$i) {
-            echo '<img id="etoile" src="../assets/etoile.webp" alt="etoile" height="50px">';
+            echo '<img class="retour" id="etoile" src="../assets/etoile.webp" alt="etoile" height="50px">';
         }
 
-        echo '<p id="avis">' . $message . '</p></div>';
+        echo '<p class="retour" id="avis">' . $message . ' <hr id="separation"> </p>';
     }
     ?>
 
