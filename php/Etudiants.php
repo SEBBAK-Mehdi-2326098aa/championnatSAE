@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 include "db.php";
@@ -8,7 +7,7 @@ if (isset($_POST["envoyer"])) {
     $note = $_POST["note"];
     $message = $_POST["message"];
 
-    $db->execute([
+    $query->execute([
 
         "note" => $note,
         "message" => $message
@@ -42,14 +41,33 @@ include "navbar.php";
 <main>
     <h2>Votre avis sur l'IUT nous intéresse !</h2>
     <form action="Etudiants.php" class="contact" method="post">
-        <h3>Inscription !</h3>
         <label class="label" for="email">Note</label><br>
         <input class="entrer" id="email" name="note" placeholder="note/5" type="number"><br>
         <label class="label" for="sujet">Message </label><br>
         <input class="entrer" id="sujet" name="message" placeholder="que pensez vous de l'IUT" type="text"><br>
         <input type="submit" id="envoyer" name="envoyer" value="Dorian">
-
     </form>
+
+
+    <?php
+    $query = $db->prepare("SELECT note, message, auteur FROM avis");
+    $query->execute();
+
+    foreach ($query->fetchAll() as $avisData) {
+        $note = $avisData['note'];
+        $message = $avisData['message'];
+        $auteur = $avisData['auteur'];
+
+        echo '<div id="retour"><p>' . $note . '</p>';
+
+        for ($i = 0; $i < $note; ++$i) {
+            echo '<img id="etoile" src="../assets/etoile.webp" alt="etoile" height="50px">';
+        }
+
+        echo '<p id="avis">' . $message . '</p></div>';
+    }
+    ?>
+
 
 </main>
 </body>
