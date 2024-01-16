@@ -58,8 +58,6 @@ include "navbar.php";
         $message = $avisData['message'];
         $auteur = $avisData['auteur'];
 
-        echo '<div id="retour"><p>' . $note . '</p>';
-
         for ($i = 0; $i < $note; ++$i) {
             echo '<img id="etoile" src="../assets/etoile.webp" alt="etoile" height="50px">';
         }
