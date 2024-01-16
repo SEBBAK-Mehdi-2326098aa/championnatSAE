@@ -39,6 +39,12 @@ header {
     z-index: 5001;
 }
 
+img {
+    width: 40%;
+    height: auto;
+    border-radius: 50px;
+}
+
 
 
 /* partie qui dimensionne le logo et le fait tourner en continu*/
