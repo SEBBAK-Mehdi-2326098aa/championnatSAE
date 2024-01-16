@@ -18,30 +18,12 @@
 </head>
 <body>
 <!-- barre de navigation responsive accompagné du logo et du titre-->
-<header id="apprendre">
 
-    <button aria-label="Changer de thème" id="changementTheme"></button>
-    <h1> Chess </h1>
-    <nav>
-        <ul class="menu">
-            <li><a  href="index.php">Presentation</a></li>
-            <li><a class="actual" href="Departement.html"> Département</a></li>
-            <li><a href="Etudiants.php"> Etudiants</a></li>
-            <li><a href="connexion.php">Connexion</a></li>
-        </ul>
-    </nav>
-    <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
-    <ul class="menuDeroulantActif">
-        <li><a  href="index.php">Presentation</a></li>
-        <li><a class="actual" href="Departement.html">Département</a></li>
-        <li><a href="Etudiants.php">Etudiants</a></li>
-        <li><a href="connexion.php">Connexion</a></li>
-    </ul>
-
-    <img alt="logo Aix en provence" class="logo" src=../assets/logo_iut.png>
-
-    <h2 id="titre">Apprends les Échecs !</h2>
-</header>
+<?php
+session_start();
+$departement = true;
+include "navbar.php";
+?>
 <!-- main qui contient les gif et les explications concernants les apprentissags-->
 
 <main class="tuto">

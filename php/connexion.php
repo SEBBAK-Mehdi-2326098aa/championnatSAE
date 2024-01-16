@@ -1,3 +1,52 @@
+
+<?php
+session_start();
+include "db.php";
+
+$query = $db->prepare("insert into utilisateur (mail, password) values (:mail , :mdp)");
+if (isset($_POST ["enregistrer"])) {
+
+    $verif = $db->prepare("select * from utilisateur where mail = :mail");
+    $verif->execute(["mail" => $_POST ["email"]]);
+
+    if ($verif->rowCount() == 0) {
+
+        $query->execute([
+            "mail" => $_POST ["email"],
+            "mdp" => $_POST ["mot_de_passe"]
+        ]);
+    }
+
+}
+
+if (isset($_POST ["enregistrer-verif"])) {
+
+    $verif = $db->prepare("select * from utilisateur where mail = :mail");
+    $verif->execute(["mail" => $_POST ["email-verif"]]);
+
+    if ($verif->rowCount() == 1) {
+        $donnees = $verif->fetch();
+        if ($_POST ["mot_de_passe-verif"] == $donnees["password"]) {
+            echo "gg well play";
+            $_SESSION ["logIn"] = true;
+
+        } else {
+            echo "Mauvais mot de passe";
+        }
+    }
+    else {
+            echo "mauvais mail" ;
+        }
+
+
+
+
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -16,50 +65,44 @@
 
 </head>
 <body>
-<header>
 
-    <!--     le header avec le menu hamburger et le menu deroulant-->
+<?php
 
-    <button aria-label="Changer de thème" id="changementTheme"></button>
-    <h1>
+if (isset($_POST["logIN"])){
+    $connexion = true;
+}
+include "navbar.php";
+?>
 
-    </h1><br>
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Presentation</a></li>
-            <li><a href="Departement.php"> Département</a></li>
-            <li><a href="Etudiants.php"> Etudiants</a></li>
-            <li><a class="actual"href="#">Connexion</a></li>
-        </ul>
-    </nav>
-    <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
-    <ul class="menuDeroulantActif">
-        <li><a href="index.php">Presentation</a></li>
-        <li><a href="Departement.php">Département</a></li>
-        <li><a href="Etudiants.php">Etudiants</a></li>
-        <li><a class="actual" href="#">Connexion</a></li>
-    </ul>
 
-    <img alt="logo Aix en provence" class="logo" src=../assets/logo_iut.png>
+<img alt="logo Aix en provence" class="logo" src=../assets/logo_iut.png>
 
-    <!--     le formulaire de contact avec les differents champs a remplir et le bouton envoyer-->
-    <h2>Posez-nous vos questions !</h2>
-</header>
-<form action="#" class="contact" enctype="text/plain" method="post">
-    <h2>Votre retour!</h2>
+<?php
+if (!isset($_SESSION["logIn"])) {
+  echo ' 
+<!--     le formulaire de contact avec les differents champs a remplir et le bouton envoyer-->
+<h2>Inscription !</h2>
+<form action="connexion.php" class="contact" method="post">
+    <h3>Inscription !</h3>
     <label class="label" for="email">E-mail</label><br>
     <input class="entrer" id="email" name="email" placeholder="votremail@gmail.com" type="email"><br>
-    <label class="label" for="sujet">Sujet</label><br>
-    <input class="entrer" id="sujet" name="sujet" placeholder="objet" type="text"><br>
-    <label class="label" for="Contact" id="mess">Message</label>
-    <textarea cols="30" id="Contact" placeholder="Dites-nous!" rows="10"></textarea> <br>
-    <button id="envoyer" onclick="myalert()">
-        Envoyer
-    </button>
-    <em>"Les échecs sont le gymnase de l'esprit"</em>
+    <label class="label" for="sujet">Mot de passe</label><br>
+    <input class="entrer" id="sujet" name="mot_de_passe" placeholder="objet" type="password"><br>
+    <input type="submit" id="envoyer" name="enregistrer" value="Dorian">
+
+</form>
+';
+    }
+?>
+<form action="connexion.php" class="contact" method="post">
+    <h4> Connexion!</h4>
+    <label class="label" for="email">E-mail</label><br>
+    <input class="entrer" id="email" name="email-verif" placeholder="votremail@gmail.com" type="email"><br>
+    <label class="label" for="sujet">Mot de passe</label><br>
+    <input class="entrer" id="sujet" name="mot_de_passe-verif" placeholder="mot de passe" type="password"><br>
+    <input type="submit" id="envoyer" name="enregistrer-verif" value="Dorian">
 </form>
 <section class="plus">
-    <h3>Êtes-vous intéressé par quelque chose d'autre ?</h3>
     <ul>
         <li>FAQ:<a href="https://assistance.chess.com/">Pour plus de curiosité</a></li>
         <li><a href="">A propos de nous</a></li>
@@ -67,7 +110,7 @@
             <a href="https://www.amazon.fr/s?k=apprendre+echecs+debutant&adgrpid=1358997397537450&hvadid=84937795864812&hvbmt=be&hvdev=c&hvlocphy=126215&hvnetw=o&hvqmt=e&hvtargid=kwd-84937916741115%3Aloc-66&hydadcr=7679_2271176&tag=hydfrmsn-21&ref=pd_sl_1vrkydbapb_e">Quelque
                 guides intéressant</a></li>
         <li>Questions ? : <a href="https://www.chess.com/fr/blog/Skaki72/les-problemes-pourquoi-et-comment">Ce qui
-            revient souvent</a></li>
+                revient souvent</a></li>
     </ul>
 </section>
 <section class="surnous">

@@ -17,33 +17,11 @@
 
 </head>
 <body>
-<header>
-    <!--     le header avec le menu hamburger et le menu deroulant-->
-    <button aria-label="Changer de thème" id="changementTheme"></button>
-
-    <nav>
-        <ul class="menu">
-            <li><a href="index.php">Presentation</a></li>
-            <li><a href="Departement.php"> Département</a></li>
-            <li><a class="actual" href="Etudiants.html"> Etudiants</a></li>
-            <li><a href="connexion.php">Connexion</a></li>
-        </ul>
-    </nav>
-    <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
-    <ul class="menuDeroulantActif">
-        <li><a href="index.php">Presentation</a></li>
-        <li><a href="Departement.php">Département</a></li>
-        <li><a class="actual" href="Etudiants.html">Etudiants</a></li>
-        <li><a href="connexion.php">Connexion</a></li>
-    </ul>
-    <section id="presentation">
-        <h1> Les meilleurs joueurs d'Echecs </h1>
-        <p class="introduction"> Vous allez découvir ici les joueurs les plus compétents de ce magnifique jeu </p>
-        <p> Il est important de noter d'abord qu'aux Echecs c'est un système de points que l'on nomme ELO qui permet de
-            connaitre le niveau d'un joueur. Plus celui-ci est élevé plus le joueur est bon</p>
-    </section>
-    <img alt="logo Aix en provence" class="logo" src=../assets/logo_iut.png>
-</header>
+<?php
+session_start();
+$etudiant = true;
+include "navbar.php";
+?>
 <main>
     <!--     le tableau avec les meilleurs Joueurs (sauf SEBBAK Mehdi le roi) -->
 
