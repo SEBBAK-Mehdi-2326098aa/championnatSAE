@@ -24,10 +24,12 @@
 
     <!-- la section avec les images et les differents paragraphes présentant le jeu -->
 
+    <img src=../img/iutinfo.webp>
+
     <section id="contenu">
             <h2> Le Diplôme </h2>
             <p>
-                Le BUT Informatique est un diplôme national dont l'objectif est de former des informaticiens
+                • Le BUT Informatique est un diplôme national dont l'objectif est de former des informaticiens
                 généralistes.
                 Ceux-ci participent à la conception, la réalisation et la mise en œuvre de solutions informatiques. Le
                 site
@@ -39,10 +41,12 @@
                 immédiate ou une poursuite d'études.
 
                 Le département informatique d'Aix-en-Provence propose deux parcours dès la 2ème année :
+                <br>
                 <br>• Réalisation d’applications : conception, développement,validation.
                 Ce parcours se concentre sur le cycle de vie du logiciel : de l’expression du besoin du client, à la
                 conception, à la validation et à la maintenance de l’application. Il forme aux métiers de
                 concepteur-développeur (mobile, web, Internet des objets, jeux vidéo...).
+                <br>
                 <br>• Déploiement d’applications communicantes et sécurisées
                 Ce parcours prépare les étudiants à la mise en place et à la sécurité des systèmes d'information et des
                 applications. Il forme aux métiers d'administrateur système/réseaux ou applicatifs, cybersécurité,
