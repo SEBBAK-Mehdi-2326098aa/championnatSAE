@@ -93,8 +93,8 @@ if (!isset($_SESSION["logIn"])) {
     <label class="label" for="email">E-mail</label><br>
     <input class="entrer" id="email" name="email" placeholder="votremail@gmail.com" type="email"><br>
     <label class="label" for="sujet">Mot de passe</label><br>
-    <input class="entrer" id="sujet" name="mot_de_passe" placeholder="objet" type="password"><br>
-    <input type="submit" id="envoyer" name="enregistrer" value="Dorian">
+    <input class="entrer" id="sujet" name="mot_de_passe" placeholder="Mot de passe " type="password"><br>
+    <input type="submit" id="envoyer" name="enregistrer" value="Envoyer">
 
 </form>
 ';
@@ -114,7 +114,7 @@ if (!isset($_SESSION["logIn"])) {
     <input class="entrer" id="email" name="email-verif" placeholder="votremail@gmail.com" type="email"><br>
     <label class="label" for="sujet">Mot de passe</label><br>
     <input class="entrer" id="sujet" name="mot_de_passe-verif" placeholder="mot de passe" type="password"><br>
-    <input type="submit" id="envoyer" name="enregistrer-verif" value="Dorian">
+    <input type="submit" id="envoyer" name="enregistrer-verif" value="Envoyer">
 </form>
 <section class="plus">
     <ul>

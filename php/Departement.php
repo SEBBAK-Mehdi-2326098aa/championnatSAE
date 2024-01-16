@@ -33,78 +33,97 @@ include "navbar.php";
         <a href="https://www.youtube.com/embed/b3_p6pb8YcU?si=12ekI_xKKbD2ngXw">Video Youtube</a>
     </video>
 </main>
+
 <section class="explications">
     <nav class="sommaire">
-        <h3 id="t2">Apprendre à Jouer aux Échecs | Règles + 4 Principes</h3>
-        <p id="petit-texte">Il n'est jamais trop tard pour apprendre !</p>
-        <ol class="liste">
-            <li><a href="#1">Préparer l’échiquier</a></li>
-            <li><a href="#2">Le déplacement des pièces</a></li>
-            <li><a href="#3"> Les règles spéciales des échecs</a></li>
-            <li><a href="#4">Qui joue en premier aux échecs</a></li>
-        </ol>
+        <h3 id="t2">Les matières en 1ère année</h3>
+        <p id="petit-texte">En première année l'enseignement est général avec des matières mélangeant la partie
+            informatique, et une partie plus générale. L'informatique compte pour ...% et la partie générale pour
+            ...%.</p>
     </nav>
-    <h4 id="1">Le BDE </h4>
+    <h4 id="1"> Les Spécialités Informatiques </h4>
     <p>
-        Au début de la partie, l'échiquier est placé de manière à ce qu'une case blanche se trouve dans le coin
-        inférieur droit du camp de chaque joueur.
-        Les pièces sont ensuite disposées de la même manière à chaque début de partie. La deuxième rangée (ou ligne) est
-        occupée par les pions. Les tours occupent les coins, puis les cavaliers viennent à leur côté, suivis des fous,
-        de la dame et enfin du roi, la dame devant se trouver sur une case de sa couleur (dame blanche sur case blanche,
-        dame noire sur case noire).
+        <string>Matières informatiques</string>
+        <br>
+        <br>
+        -Programmation et programmation orientée objet<br>
+        -Programmation web côté serveur<br>
+        -Architecture des ordinateurs<br>
+        -Systèmes d'exploitation et réseaux<br>
+        -Programmation répartie<br>
+        -Programmation et administration bases de données<br>
+        -Analyse et conception des systèmes d'information<br>
+        -Interfaces hommes-machine<br>
+        -Conception de documents et interfaces numériques<br>
+        -Conception et développement d'applications mobiles<br>
+        -Gestion de projet informatique<br>
+        -Méthodologie de la production d'applications<br>
+        -Informatique embarquée et temps réel<br>
+        <br>
+        <br>
+        <string> Langages/Logiciels utilisés</string>
+        <br>
+        <br>
+        -Langages de programmation : C, C++, Java, PHP, JavaScript, SQL, PL/SQL, HTML 5, CSS 3...<br>
+        -Systèmes d'exploitation : Linux, Windows, Android (option)<br>
+        -Bases de données : Oracle, MySQL<br>
+        -Analyse et conception : UML<br>
+        -Environnements de développement : NetBeans, Eclipse, VisuualStudio, WampServer , XMLSpy (option), ...<br>
+        -Logiciels - Outils : MS-Projet, PowerAMC, Visual Paradigm, SQL Developer, Maple, R, VirtualBox, Dreamweaver
+        (option) , Notepad++, Filezilla, ERP Dolibarr, ...<br>
+        -Bureautique : Word, PowerPoint, Excel, Access, Publisher, Freemind, OpenOffice,<br>
+
         <img alt="debut" class="images" src="../assets/imagesapprendre/etape1.gif">
     </p>
-    <h4 id="2">Étape 2. Le déplacement des pièces </h4>
-
-    <h4 id="3">Étape 3. Les règles spéciales des échecs</h4>
+    <h4 id="2">Les Enseignements généraux </h4>
     <p>
-        Il existe quelques règles spéciales aux échecs qui peuvent sembler illogiques au premier abord. Elles ont été
-        créées pour rendre le jeu plus amusant et intéressant.
-        <br><strong>Promouvoir un pion</strong>
-        Le pion dispose d’un autre coup spécial. Si un pion atteint l’autre bout de l’échiquier, il peut devenir
-        n’importe quelle autre pièce, à l’exception d’un roi.
-        <img alt="Promotion du pion" class="images" src="../assets/imagesapprendre/promouvoir.jpeg">
-        Ceci s’appelle la promotion. Une idée fausse répandue est qu’un pion promu ne peut être remplacé que par une
-        pièce qui a été capturée : ce n’est PAS vrai. Un pion est habituellement promu en dame. Seuls les pions peuvent
-        être promus.
-        <br><strong>Prendre « en passant »</strong>
-        La dernière règle concernant les pions s’appelle « la prise en passant ». Lorsqu’un pion avance de deux cases à
-        son premier coup, et ce faisant se retrouve à côté d’un pion de l’adversaire (qui ne peut donc plus le capturer
-        de manière classique), cet autre pion a la possibilité de capturer le premier « en passant », comme s’il ne
-        s’était déplacé que d’une case.
-        Ce coup spécial doit être joué immédiatement, dans le tour qui suit le départ du pion pris. Voyez l’exemple
-        ci-dessous pour mieux comprendre cette règle étrange, mais importante.
-        <img alt="Échecs en passant" class="special" src="../assets/imagesapprendre/prisepassant.jpeg">
-        <br><strong>Le Roque</strong>
-        Une autre règle spéciale des échecs s’appelle le roque. Il vous permet de faire d’une pierre deux coups : mettre
-        votre roi à l’abri (dans la mesure du possible) et faire entrer une tour dans le jeu en la sortant de son coin.
-        Le joueur déplace son roi latéralement de deux cases, puis pose la tour sur la case située immédiatement de
-        l’autre côté de celui-ci. (Regardez l’exemple ci-dessous.) Pour pouvoir roquer, les conditions suivantes doivent
-        toutefois être remplies :
-
-        il doit s’agir du premier déplacement du roi
-        il doit s’agir du premier coup de la tour concernée
-        pour roquer, aucune pièce ne doit se trouver entre le roi et la tour
-        le roi ne peut pas se placer en échec ni traverser une ligne d'échec
-        En roquant avec la tour la plus proche du roi, vous effectuez un « petit roque ». Si vous utilisez la tour la
-        plus éloignée, en faisant traverser au roi la case de départ de la dame, cela s’appelle un « grand roque ».
-        Quelle que soit la direction du roque, le roi se déplace toujours de deux cases.
-        <img alt="Comment roquer aux échecs" class="images" src="../assets/imagesapprendre/roque.gif">
-    </p>
-    <h4 id="4"> Étape 4. Qui joue en premier aux échecs</h4>
-    <p>
-        Le joueur qui dispose des pièces blanches joue toujours en premier. Elles sont donc en général attribuées au
-        hasard, souvent à pile ou face ou en demandant à l’un des joueurs de deviner la couleur du pion caché dans la
-        main de l’autre. Les blancs jouent alors un coup, puis les noirs, puis les blancs à nouveau, et ainsi de suite
-        jusqu’à la fin de la partie. Avoir le trait au début du jeu constitue un petit avantage, le camp des pièces
-        blanches ayant l’opportunité d’attaquer plus vite.
-    </p>
-    <h4> Entraînez-vous !</h4>
-    <p>La meilleure chose que vous puissiez faire pour vous améliorer aux échecs est de jouer beaucoup de parties ! Que
-        ce soit à la maison, avec vos amis ou votre famille, ou bien en ligne, il est important de jouer souvent.
-        Aujourd’hui, c’est facile de trouver des parties en ligne !
+        -Les mathématiques : mathématiques discrètes, algèbre linéaire, graphes et langages, analyse et méthodes
+        numériques, probabilités et statistiques.<br>
+        <br>
+        -La communication : résumé, compte-rendu, présentation orale, prise de parole en public, jeu de rôle,
+        explication, dynamique des groupes, rédaction d'un dossier de candidature avec lettres et CV et entretiens
+        de recrutement.<br>
+        <br>
+        -L'anglais général et technique : utilisation de tutoriels techniques, articles scientifiques ou généraux,
+        travail à partir de supports multimédia variés, réunions, conversations téléphoniques, simulations de
+        situations professionnelles et compte-rendu <br>
+        <br>
+        -Et la connaissance du monde de l'entreprise et du travail : environnement économique, fonctionnements des
+        organisations, environnement comptable, financier, juridique et social, droit des technologies de
+        l'information et de la communication et gestion des systèmes d'information <br>
+        <br>
     </p>
 </section>
+
+
+<section class="explications">
+    <nav class="sommaire">
+        <h3 id="t2">Parcours de 2ème et 3ème année</h3>
+        <p id="petit-texte">Le département informatique d'Aix-en-Provence propose deux parcours accessible dès la
+            2ème année
+        </p>
+        <ol class="liste">
+            <li><a href="#3">Parcours A</a></li>
+            <li><a href="#4">Parcours B</a></li>
+        </ol>
+    </nav>
+    <h4 id="3">Parcours A. Réalisation d’applications : conception, développement et validation</h4>
+    <p>
+        Dans ce parcours, les étudiants se veront confrontés au cycle de vie du logiciel : de
+        l’expression du besoin du client, à la conception ou encore à la validation en passant par la maintenance de
+        l’application. <br> Le parcours A forme les étudiants aux métiers de
+        <strong>concepteur-développeur</strong> (mobile, web, Internet des objets, jeux vidéo...).
+    </p>
+    <h4 id="4">Parcours B. Déploiement d’applications communicantes et sécurisées </h4>
+    <p>
+        Dans ce parcours, les étudiants se concentreront sur la mise en place et à la sécurité des systèmes
+        d'information et des
+        applications. <br>
+        Grâce à ce parcours, les étudiants seront préparés aux <strong>métiers d'administrateur
+            système/réseaux ou applicatifs, cybersécurité, DevOps, intégrateurs d'application, ...</strong>
+    </p>
+</section>
+
 <script src="../js/main.js"></script>
 
 <!--footer qui permet de revenir en haut de la page en cliquant sur l'icone-->
