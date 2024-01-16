@@ -31,9 +31,7 @@
             <p>
                 • Le BUT Informatique est un diplôme national dont l'objectif est de former des informaticiens
                 généralistes.
-                Ceux-ci participent à la conception, la réalisation et la mise en œuvre de solutions informatiques. Le
-                site
-                d’Aix prépare plus spécialement au métier de "développeur fullstack", ainsi qu’à l’administration et la
+                Le département informatique d'Aix-en-provence permet de se former en tant que développeur, ainsi qu’à l’administration et la
                 sécurisation de systèmes informatiques communicants. Les informaticiens issus de cette formation
                 possèdent
                 des compétences à la fois pratiques et théoriques leur permettant d'envisager une insertion
@@ -43,13 +41,13 @@
                 Le département informatique d'Aix-en-Provence propose deux parcours dès la 2ème année :
                 <br>
                 <br>• Réalisation d’applications : conception, développement,validation.
-                Ce parcours se concentre sur le cycle de vie du logiciel : de l’expression du besoin du client, à la
+                Cette formation forme les étudiants sur le déveleppement de logiciel : de l’expression du besoin du client, à la
                 conception, à la validation et à la maintenance de l’application. Il forme aux métiers de
-                concepteur-développeur (mobile, web, Internet des objets, jeux vidéo...).
+                concepteur-développeur mobile, web, jeux vidéo et d'autre encore.
                 <br>
                 <br>• Déploiement d’applications communicantes et sécurisées
-                Ce parcours prépare les étudiants à la mise en place et à la sécurité des systèmes d'information et des
-                applications. Il forme aux métiers d'administrateur système/réseaux ou applicatifs, cybersécurité,
+                Cette formation permet aux étudiants d'étudier les systèmes d'information à travers la sécurité avec des applications.
+                Les métiers possibles après cette formation sont administrateur système/réseaux ou applicatifs, cybersécurité,
                 DevOps, intégrateurs d'application, ..
             </p>
         </section>
