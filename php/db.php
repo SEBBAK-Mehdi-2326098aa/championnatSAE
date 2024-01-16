@@ -1,4 +1,4 @@
-<?php
+ <?php
 define('HOST','localhost');
 define('DB_NAME','dorian');
 define('USER','root');
