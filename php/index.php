@@ -16,78 +16,49 @@
 </head>
 
 <body>
-<?php
-session_start();
-$presentation = true;
-include "navbar.php";
 
-if (isset($_SESSION["logIn"])){
-    echo '
-<h1> IUT Aix-en-Provence </h1>
+
+<h1> IUT Informatique Aix-en-provence </h1>
     
 <main>
 
     <!-- la section avec les images et les differents paragraphes présentant le jeu -->
 
-    <section id="description">
-
-        <h2>Introduction</h2>
-        <p class="introduction">
-
-            <img alt="Echiquier avec des pièces vertes et blanches dessus" class=" image1"
-                 height="400"
-                 src="https://www.ingenierie84.fr/uploads/thumbnails/uploads/Image/dsc_0054_1920x960.jpg">
-
-
-    </section>
-
     <section id="contenu">
-        <h3 class="titrepartie">Histoire</h3>
-        
-        </p>
-    </section>
+            <h2> Le Diplôme </h2>
+            <p>
+                Le BUT Informatique est un diplôme national dont l'objectif est de former des informaticiens
+                généralistes.
+                Ceux-ci participent à la conception, la réalisation et la mise en œuvre de solutions informatiques. Le
+                site
+                d’Aix prépare plus spécialement au métier de "développeur fullstack", ainsi qu’à l’administration et la
+                sécurisation de systèmes informatiques communicants. Les informaticiens issus de cette formation
+                possèdent
+                des compétences à la fois pratiques et théoriques leur permettant d'envisager une insertion
+                professionnelle
+                immédiate ou une poursuite d'études.
 
-    <section id="Competition">
-        <h4 class="titrepartie">Compétition</h4>
-        
-        </p>
-    </section>
-    <section>
-        <h4 class="titrepartie">Les règles du jeu</h4>
-        <p>
-            
-
-        </p>
-    </section>
+                Le département informatique d'Aix-en-Provence propose deux parcours dès la 2ème année :
+                <br>• Réalisation d’applications : conception, développement,validation.
+                Ce parcours se concentre sur le cycle de vie du logiciel : de l’expression du besoin du client, à la
+                conception, à la validation et à la maintenance de l’application. Il forme aux métiers de
+                concepteur-développeur (mobile, web, Internet des objets, jeux vidéo...).
+                <br>• Déploiement d’applications communicantes et sécurisées
+                Ce parcours prépare les étudiants à la mise en place et à la sécurité des systèmes d'information et des
+                applications. Il forme aux métiers d'administrateur système/réseaux ou applicatifs, cybersécurité,
+                DevOps, intégrateurs d'application, ..
+            </p>
+        </section>
 
 
 </main>
-
-';}
-else {
-
-    echo "DORIAN EST PAS CONTENT CONNECTE TOI";
-}
-
-?>
 
 <hr>
 <footer>
     <!--     le footer avec les differents liens vers les reseaux sociaux, les liens ne sont pas réelements reliés vers no pages parce que Mehdi est timide-->
     <section id="reseaux">
-        <h5>Nos Réseaux</h5>
-        <a href="https://www.facebook.com/">
-            <img alt="L'image ne charge pas"
-                 src="../assets/tic-tac.png">
-        </a>
-        <a href="https://twitter.com/">
-            <img alt="L'image ne charge pas"
-                 src="../assets/twitter.png">
-        </a>
-        <a href="https://www.instagram.com/">
-            <img alt="L'image ne charge pas"
-                 src="../assets/instagram.png">
-        </a>
+        <h3>Nos Réseaux</h3>
+
 
     </section>
 </footer>

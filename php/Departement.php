@@ -44,7 +44,7 @@ include "navbar.php";
             <li><a href="#4">Qui joue en premier aux échecs</a></li>
         </ol>
     </nav>
-    <h4 id="1">Étape 1. Préparer l’échiquier </h4>
+    <h4 id="1">Le BDE </h4>
     <p>
         Au début de la partie, l'échiquier est placé de manière à ce qu'une case blanche se trouve dans le coin
         inférieur droit du camp de chaque joueur.
@@ -55,47 +55,7 @@ include "navbar.php";
         <img alt="debut" class="images" src="../assets/imagesapprendre/etape1.gif">
     </p>
     <h4 id="2">Étape 2. Le déplacement des pièces </h4>
-    <p>
-        Chacune des 6 sortes de pièces se déplace différemment. Les pièces ne peuvent pas en traverser d’autres (bien
-        que le cavalier puisse sauter par-dessus) et ne peuvent jamais partager une case avec une pièce de leur propre
-        camp. En revanche, elles peuvent prendre la place d’une pièce adverse en la capturant. Le but du déplacement des
-        pièces est de les mettre en position d’en capturer une autre (en atterrissant sur sa case et en la remplaçant),
-        de défendre leurs alliées contre la capture, ou de contrôler des cases importantes.
-        <br><strong>Comment se déplace le roi</strong>
-        Bien que le roi soit la pièce la plus importante, c’est aussi l’une des plus faibles. Il ne peut bouger que
-        d’une case dans n’importe quelle direction : vers le haut, vers le bas, sur le côté ou en diagonale. Le roi n’a
-        pas le droit de se placer sur une case où il serait en échec (là où il pourrait être capturé). Quand une autre
-        pièce l’attaque, cela s’appelle « échec au roi ».
-        <img alt="deplacement du roi" class="images" src="../assets/imagesapprendre/deplacementroi.gif">
-        <br><strong>Comment se déplace la dame</strong>
-        La dame est la pièce la plus forte. Elle peut se déplacer dans toutes les directions : vers l’avant, vers
-        l’arrière, sur le côté ou en diagonale, aussi loin que le joueur le souhaite à condition de ne pas passer
-        par-dessus d’autres pièces. Comme c’est le cas pour toutes les pièces, lorsque la dame capture une pièce
-        adverse, elle s’arrête sur la case de la capture. Remarquez que lorsque la dame blanche capture la dame noire,
-        le roi noir est forcé de bouger.
-        <img alt="deplacement de la dame" class="images" src="../assets/imagesapprendre/dame.gif">
-        <br><strong>Comment se déplace la tour</strong>
-        La tour bouge aussi loin que le joueur le désire mais seulement en avant, en arrière et sur les côtés. Les tours
-        sont particulièrement efficaces quand elles se protègent mutuellement et opèrent ensemble !
-        <img alt="Déplacement de la Tour aux échecs" class="images" src="../assets/imagesapprendre/tour.gif">
-        <br><strong>Comment se déplace le fou</strong>
-        Le fou se déplace aussi loin que le joueur le souhaite, mais uniquement en diagonale. Chaque fou commence sur
-        une case d’une couleur (noire ou blanche) qu’il ne quittera jamais. Les fous sont efficaces ensemble, car chacun
-        couvre les cases auxquelles l’autre n’a pas accès.
-        <img alt="Déplacement du Fou aux échecs" class="images" src="../assets/imagesapprendre/fou.gif">
-        <br><strong>Comment se déplace le cavalier</strong>
-        Les cavaliers se déplacent d’une manière particulière par rapport aux autres pièces : ils bougent de deux cases
-        dans une direction, puis d’une à 90 degrés, comme pour former un « L ». Les cavaliers sont aussi les seuls
-        autorisés à passer par-dessus les autres pièces, quel que soit leur camp.
-        <img alt="Déplacement du Cavalier aux échecs" class="images" src="../assets/imagesapprendre/cavalier.gif">
-        <br><strong>Comment se déplace le pion</strong>
-        Les pions sont particuliers, car ils ne capturent pas de la même manière qu’ils se déplacent : ils bougent vers
-        l’avant et attaquent en diagonale. Les pions ne peuvent avancer que d’une case à la fois, sauf lors de leur
-        premier déplacement, où il leur est permis d’avancer de deux cases. Ils ne peuvent capturer que sur l’une des
-        deux cases situées en diagonale devant eux. Ils ne peuvent ni bouger, ni capturer en arrière. Lorsqu’une pièce
-        se trouve sur la case juste devant eux, ils sont bloqués, ne pouvant ni la capturer ni passer par-dessus.
-        <img alt="deplacement du pion" class="images" src="../assets/imagesapprendre/pion.gif">
-    </p>
+
     <h4 id="3">Étape 3. Les règles spéciales des échecs</h4>
     <p>
         Il existe quelques règles spéciales aux échecs qui peuvent sembler illogiques au premier abord. Elles ont été
