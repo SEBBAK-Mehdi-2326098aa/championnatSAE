@@ -18,7 +18,7 @@
 <body>
 
 
-<h1> IUT Informatique Aix-en-provence </h1>
+<h1> IUT Informatique Aix-en-provence</h1>
     
 <main>
 
