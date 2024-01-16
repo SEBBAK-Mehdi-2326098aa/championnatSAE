@@ -1,3 +1,20 @@
+<?php
+session_start();
+include "db.php";
+
+$query = $db->prepare("insert into avis ( note ,message ) values (:note , :message)");
+if (isset($_POST["envoyer"])) {
+    $note = $_POST["note"];
+    $message = $_POST["message"];
+
+    $query->execute([
+
+        "note" => $note,
+        "message" => $message
+    ]);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,112 +35,40 @@
 </head>
 <body>
 <?php
-session_start();
 $etudiant = true;
 include "navbar.php";
 ?>
 <main>
-    <!--     le tableau avec les meilleurs Joueurs (sauf SEBBAK Mehdi le roi) -->
+    <h2>Votre avis sur l'IUT nous intéresse !</h2>
+    <form action="Etudiants.php" class="contact" method="post">
+        <label class="label" for="email">Note</label><br>
+        <input class="entrer" id="email" name="note" placeholder="note/5" type="number"><br>
+        <label class="label" for="sujet">Message </label><br>
+        <input class="entrer" id="sujet" name="message" placeholder="que pensez vous de l'IUT" type="text"><br>
+        <input type="submit" id="envoyer" name="envoyer" value="Dorian">
+    </form>
 
-    <table id="tableauJoueurs">
-        <thead>
-        <tr>
-            <th> Noms</th>
-            <th> Age</th>
-            <th> ELO</th>
-            <th> Nationalité</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Magnus Carlsen</td>
-            <td>30</td>
-            <td>2847</td>
-            <td><img alt="drapeau Norvège" src="../assets/drapeauxPays/no.png"></td>
-        </tr>
-        <tr>
-            <td>Wesley So</td>
-            <td>27</td>
-            <td>2770</td>
-            <td><img alt="drapeau Philipinnes" src="../assets/drapeauxPays/ph.png"></td>
-        </tr>
-        <tr>
-            <td>Fabiano Caruana</td>
-            <td>28</td>
-            <td>2767</td>
-            <td><img alt="drapeau USA" src="../assets/drapeauxPays/us.png"></td>
-        </tr>
-        <tr>
-            <td>Ding Liren</td>
-            <td>28</td>
-            <td>2760</td>
-            <td><img alt="drapeau Chine" src="../assets/drapeauxPays/cn.png"></td>
-        </tr>
-        <tr>
-            <td>Maxime Vachier-Lagrave</td>
-            <td>30</td>
-            <td>2758</td>
-            <td><img alt="Drapeau Arménie" src="../assets/drapeauxPays/fr.png"></td>
-        </tr>
-        <tr>
-            <td>Levon Aronian</td>
-            <td>38</td>
-            <td>2758</td>
-            <td><img alt="Drapeau Arménie" src="../assets/drapeauxPays/am.png"></td>
-        </tr>
-        <tr>
-            <td>Shakhriyar Mamedyarov</td>
-            <td>36</td>
-            <td>2756</td>
-            <td><img alt="Drapeau Azerbaïdjan" src="../assets/drapeauxPays/az.png"></td>
-        </tr>
-        <tr>
-            <td>Teimour Radjabov</td>
-            <td>33</td>
-            <td>2756</td>
-            <td><img alt="Drapeau Azerbaïdjan" src="../assets/drapeauxPays/az.png"></td>
-        </tr>
-        </tbody>
-    </table>
-    <p class="introduction"> Nous allons désormais nous concentrer sur les 3 meilleurs joueurs d'Echecs et leur
-        histoire</p>
 
-    <!--     les 3 meilleurs joueurs avec leurs photos et leurs descriptions -->
+    <?php
+    $query = $db->prepare("SELECT note, message, auteur FROM avis");
+    $query->execute();
 
-    <section id="les3Meilleurs">
-        <video controls id="video">
-            <source src="../assets/Snapchat-1422384764.mp4" type="video/mp4">
-            <track default kind="subtitles" label="Français" src="../assets/web.vtt" srclang="fr">
-            Mehdi Video.
-        </video>
-        <h2>Les 3 meilleurs joueurs</h2>
-        <section id="Mehdi">
-            <h3> Mehdi SEBBAK </h3>
-            <img alt="photo de Mehdi Sebbak" class="photosMeilleurs" id="md"
-                 onclick="ouvrir()" src="../assets/PhotosDesMeilleursJoueurs/happy_mehdi.jpg">
-            <button id="btnfermer" onclick="fermer()"><img alt="quitter"
-                                                           src="../assets/quitter-le-mode-plein-ecran.png"></button>
-            <p> Ce bel homme Français est considéré dans le milieu comme le plus fort du domaine des Echecs, malgré le
-                fait qu'il ne figure pas dans le classement élo par modestie, il prouva à de multiples reprises qu'il
-                est le meilleur. De plus il est vraiment très aimable.</p>
-        </section>
-        <section id="Magnus">
-            <h4> Magnus CARLSEN </h4>
-            <img alt="photo de Magnus Carlsen" class="photosMeilleurs"
-                 src="../assets/PhotosDesMeilleursJoueurs/5081.webp">
-            <p> Magnus Carlsen est un joueur d'échecs norvégien né le 30 novembre 1990 à Tønsberg. Il a remporté le
-                championnat du monde plusieurs fois. Il est considéré comme le meilleur joueur d'échecs derrière le
-                grand SEBBAK Mehdi.</p>
-        </section>
-        <section id="Wesley">
-            <h5> Wesley SO</h5>
-            <img alt="photo de Wesley So" class="photosMeilleurs"
-                 src="../assets/PhotosDesMeilleursJoueurs/Wesley_So,_2015.jpg">
-            <p> Wesley So est un joueur d'échecs américano-philippin né le 9 octobre 1993 à Bacoor. Il a obtenu le titre
-                de grand maître international en 2008. Il a remporté le championnat des États-Unis en 2017 et 2020 et le
-                championnat du monde d'échecs en 2021.
-        </section>
-    </section>
+    foreach ($query->fetchAll() as $avisData) {
+        $note = $avisData['note'];
+        $message = $avisData['message'];
+        $auteur = $avisData['auteur'];
+
+        echo '<div id="retour"><p>' . $note . '</p>';
+
+        for ($i = 0; $i < $note; ++$i) {
+            echo '<img id="etoile" src="../assets/etoile.webp" alt="etoile" height="50px">';
+        }
+
+        echo '<p id="avis">' . $message . '</p></div>';
+    }
+    ?>
+
+
 </main>
 </body>
 
