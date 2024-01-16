@@ -8,45 +8,20 @@
 
     <title> Meilleurs Joueurs </title>
     <link class="classique" href="../css/style.css" rel="stylesheet">
-    <link class="traditionnel" disabled href="../css/style-traditionnel.css" rel="stylesheet">
-    <link class="classique" href="../css/Joueurs.css" rel="stylesheet">
-    <link class="traditionnel" disabled href="../css/Joueurs-traditionnel.css" rel="stylesheet">
+    <link class="traditionnel" disabled href="../css/style-sombre.css" rel="stylesheet">
+    <link class="classique" href="../css/Etudiants.css" rel="stylesheet">
+    <link class="traditionnel" disabled href="../css/Etudiants-sombre.css" rel="stylesheet">
     <link href=/ rel="shortcut icon" type="image/png"/>
     <link href="../assets/favicone/favicon-96x96.png" rel="shortcut icon">
     <script defer src="../js/main.js"></script>
 
 </head>
 <body>
-<header>
-    <!--     le header avec le menu hamburger et le menu deroulant-->
-    <button aria-label="Changer de thème" id="changementTheme"></button>
-
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Presentation</a></li>
-            <li><a href="Apprendre.html"> Apprendre</a></li>
-            <li><a class="actual" href="Joueurs.html">Joueurs</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
-    <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
-    <ul class="menuDeroulantActif">
-        <li><a href="index.html">Presentation</a></li>
-        <li><a href="Apprendre.html"> Apprendre</a></li>
-        <li><a class="actual" href="#">Joueurs</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
-    </ul>
-    <section id="presentation">
-        <h1> Les meilleurs joueurs d'Echecs </h1>
-        <p class="introduction"> Vous allez découvir ici les joueurs les plus compétents de ce magnifique jeu </p>
-        <p> Il est important de noter d'abord qu'aux Echecs c'est un système de points que l'on nomme ELO qui permet de
-            connaitre le niveau d'un joueur. Plus celui-ci est élevé plus le joueur est bon</p>
-    </section>
-    <img alt="logo de chess.com" class="logo logo1"
-         src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png">
-    <img alt="favicon du code" class="logo logo2" src="https://cdn-icons-png.flaticon.com/512/5462/5462881.png">
-
-</header>
+<?php
+session_start();
+$etudiant = true;
+include "navbar.php";
+?>
 <main>
     <!--     le tableau avec les meilleurs Joueurs (sauf SEBBAK Mehdi le roi) -->
 

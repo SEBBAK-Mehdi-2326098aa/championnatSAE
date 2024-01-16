@@ -7,8 +7,8 @@
 
     <title>Apprendre</title>
     <link class="classique" href="../css/style.css" rel="stylesheet">
-    <link class="traditionnel" disabled href="../css/style-traditionnel.css" rel="stylesheet">
-    <link class="classique" href="../css/css-apprendre.css" rel="stylesheet">
+    <link class="traditionnel" disabled href="../css/style-sombre.css" rel="stylesheet">
+    <link class="classique" href="../css/departement.css" rel="stylesheet">
     <link class="traditionnel" disabled href="../css/apprendre-traditionnel.css" rel="stylesheet">
     <link href=/ rel="shortcut icon" type="image/png"/>
     <link href="../assets/favicone/favicon-96x96.png" rel="shortcut icon">
@@ -18,33 +18,12 @@
 </head>
 <body>
 <!-- barre de navigation responsive accompagné du logo et du titre-->
-<header id="apprendre">
 
-    <button aria-label="Changer de thème" id="changementTheme"></button>
-    <h1> Chess </h1>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Presentation</a></li>
-            <li><a class="actual" href="#"> Apprendre</a></li>
-            <li><a href="Joueurs.html"> Joueurs</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
-    <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
-    <ul class="menuDeroulantActif">
-        <li><a href="index.html">Presentation</a></li>
-        <li><a class="actual" href="#"> Apprendre</a></li>
-        <li><a href="Joueurs.html">Joueurs</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
-    </ul>
-
-
-    <img alt="logo de chess.com" class="logo logo1"
-         src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png">
-    <img alt="favicon du code" class="logo logo2" src="https://cdn-icons-png.flaticon.com/512/5462/5462881.png">
-
-    <h2 id="titre">Apprends les Échecs !</h2>
-</header>
+<?php
+session_start();
+$departement = true;
+include "navbar.php";
+?>
 <!-- main qui contient les gif et les explications concernants les apprentissags-->
 
 <main class="tuto">
@@ -169,7 +148,7 @@
 <script src="../js/main.js"></script>
 
 <!--footer qui permet de revenir en haut de la page en cliquant sur l'icone-->
-<footer><a href="Apprendre.html"><img alt="stickers-great" class="stickers"
-                                      src="../assets/imagesapprendre/customer-service.png"></a></footer>
+<footer><a href="Departement.html"><img alt="stickers-great" class="stickers"
+                                        src="../assets/imagesapprendre/customer-service.png"></a></footer>
 </body>
 </html>
