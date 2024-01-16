@@ -2,15 +2,17 @@
 session_start();
 include "db.php";
 
-$query = $db->prepare("insert into avis ( note ,message ) values (:note , :message)");
+$query = $db->prepare("insert into avis ( note ,message, auteur ) values (:note , :message , :auteur)");
 if (isset($_POST["envoyer"])) {
     $note = $_POST["note"];
     $message = $_POST["message"];
+    $auteur = $_POST["auteur"];
 
     $query->execute([
 
         "note" => $note,
-        "message" => $message
+        "message" => $message,
+        "auteur" => $auteur
     ]);
 }
 
@@ -39,8 +41,12 @@ $etudiant = true;
 include "navbar.php";
 ?>
 <main>
-    <h2>Votre avis sur l'IUT nous intéresse !</h2>
-    <form action="Etudiants.php" class="contact" method="post">
+
+    <form id = "formulaire" action="Etudiants.php" class="contact" method="post">
+        <h1>Votre avis sur l'IUT nous intéresse !</h1>
+
+        <label class="label" for="sujet"> Auteur </label><br>
+        <input class="entrer" id="email" name="auteur" placeholder="Auteur ?" type="text"><br>
         <label class="label" for="email">Note</label><br>
         <input class="entrer" id="email" name="note" placeholder="note/5" type="number"><br>
         <label class="label" for="sujet">Message </label><br>
@@ -53,13 +59,14 @@ include "navbar.php";
     $query = $db->prepare("SELECT note, message, auteur FROM avis");
     $query->execute();
 
+
+
     foreach ($query->fetchAll() as $avisData) {
         $note = $avisData['note'];
         $message = $avisData['message'];
         $auteur = $avisData['auteur'];
 
-        echo '<div id="retour"><p>' . $note . '</p>';
-
+        echo '<p id="auteur">' . $auteur . '</p></div>';
         for ($i = 0; $i < $note; ++$i) {
             echo '<img id="etoile" src="../assets/etoile.webp" alt="etoile" height="50px">';
         }

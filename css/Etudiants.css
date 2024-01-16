@@ -1,8 +1,29 @@
+#auteur{
+    font-size: 3em;
+}
+#avis{
+    color: white;
+    font-size: 2em;
+    font-weight: 900;
+
+}
+#formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#etoile {
+    border-radius: 50px;
+}
+main {
+    margin: auto;
+    padding-top: 10%;
+}
 #retour {
 
     display: flex;
     flex-direction: row;
-
+    justify-content: space-evenly;
 }
 
 /*media queries*/
