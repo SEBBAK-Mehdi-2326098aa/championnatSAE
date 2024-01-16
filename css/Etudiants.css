@@ -1,11 +1,17 @@
 #auteur{
+    font-weight: 900;
     font-size: 3em;
 }
 #avis{
-    color: white;
+    padding-bottom: 50px;
+    color: darkcyan;
     font-size: 2em;
     font-weight: 900;
 
+}
+#separation{
+    color: darkred;
+    border : solid;
 }
 #formulaire{
     display: flex;
@@ -16,14 +22,12 @@
     border-radius: 50px;
 }
 main {
+    padding-left: 2px;
     margin: auto;
     padding-top: 10%;
 }
-#retour {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.retour {
+    margin: 15px;
 }
 
 /*media queries*/
