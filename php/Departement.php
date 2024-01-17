@@ -73,7 +73,6 @@ include "navbar.php";
         (option) , Notepad++, Filezilla, ERP Dolibarr, ...<br>
         -Bureautique : Word, PowerPoint, Excel, Access, Publisher, Freemind, OpenOffice,<br>
 
-        <img alt="debut" class="images" src="../assets/imagesapprendre/etape1.gif">
     </p>
     <h4 id="2">Les Enseignements généraux </h4>
     <p>
@@ -127,7 +126,7 @@ include "navbar.php";
 <script src="../js/main.js"></script>
 
 <!--footer qui permet de revenir en haut de la page en cliquant sur l'icone-->
-<footer><a href="Departement.html"><img alt="stickers-great" class="stickers"
-                                        src="../assets/imagesapprendre/customer-service.png"></a></footer>
-</body>
+<footer>    <a href="formulaire.php" id="formulaire-contact"> Nous Contacter ! </a>
+</footer>
+
 </html>

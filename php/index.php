@@ -22,7 +22,7 @@ $presentation = true;
 include "navbar.php";
 ?>
 
-<h1> IUT Informatique Aix-en-provence</h1>
+<h1> BUT Informatique Aix-en-provence</h1>
     
 <main>
 

@@ -69,7 +69,7 @@ if (isset($_SESSION["logIn"])) {
         if ($note>5){
             $note = 5;
         }
-        else if ($note<5) {
+        else if ($note<0) {
 
             $note = 0;
         }
