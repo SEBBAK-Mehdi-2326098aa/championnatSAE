@@ -29,8 +29,8 @@ if (isset($_POST["envoyer"])) {
     <title> Meilleurs Joueurs </title>
     <link class="classique" href="../css/style.css" rel="stylesheet">
     <link class="traditionnel" disabled href="../css/style-sombre.css" rel="stylesheet">
-    <link class="classique" href="../css/Etudiants.css" rel="stylesheet">
-    <link class="traditionnel" disabled href="../css/Etudiants-sombre.css" rel="stylesheet">
+    <link class="classique" href="../css/avis.css" rel="stylesheet">
+    <link class="traditionnel" disabled href="../css/avis-sombre.css" rel="stylesheet">
     <link href=/ rel="shortcut icon" type="image/png"/>
     <link href="../assets/favicone/favicon-96x96.png" rel="shortcut icon">
     <script defer src="../js/main.js"></script>
@@ -38,7 +38,7 @@ if (isset($_POST["envoyer"])) {
 </head>
 <body>
 <?php
-$etudiant = true;
+$avis = true;
 include "navbar.php";
 
 if (isset($_SESSION["logIn"])) {
@@ -54,33 +54,6 @@ if (isset($_SESSION["logIn"])) {
         <input type="submit" id="envoyer" name="envoyer" value="Partager">
     </form>
     ';
-
-    $query = $db->prepare("SELECT note, message, auteur FROM avis ORDER BY id_avis DESC");
-    $query->execute();
-
-
-
-    foreach ($query->fetchAll() as $avisData) {
-        $note = $avisData['note'];
-        $message = $avisData['message'];
-        $auteur = $avisData['auteur'];
-
-
-        if ($note>5){
-            $note = 5;
-        }
-        else if ($note<0) {
-
-            $note = 0;
-        }
-
-        echo '<p class="retour" id="auteur">' . $auteur . '</p> ';
-        for ($i = 0; $i < $note; ++$i) {
-            echo '<img class="retour" id="etoile" src="../assets/etoile.webp" alt="etoile" height="50px">';
-        }
-
-        echo '<p class="retour" id="avis">' . $message . ' <hr id="separation"> </p>';
-    }
 }
 else {
 
@@ -91,6 +64,33 @@ else {
 <a href='connexion.php'> Connectez-vous ici </a>' 
 </section>
 ";
+}
+
+$query = $db->prepare("SELECT note, message, auteur FROM avis ORDER BY id_avis DESC");
+$query->execute();
+
+
+
+foreach ($query->fetchAll() as $avisData) {
+    $note = $avisData['note'];
+    $message = $avisData['message'];
+    $auteur = $avisData['auteur'];
+
+
+    if ($note>5){
+        $note = 5;
+    }
+    else if ($note<0) {
+
+        $note = 0;
+    }
+
+    echo '<p class="retour" id="auteur">' . $auteur . '</p> ';
+    for ($i = 0; $i < $note; ++$i) {
+        echo '<img class="retour" id="etoile" src="../assets/etoile.webp" alt="etoile" height="50px">';
+    }
+
+    echo '<p class="retour" id="avis">' . $message . ' <hr id="separation"> </p>';
 }
 ?>
 

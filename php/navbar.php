@@ -10,12 +10,17 @@
             <li><a <?php if (isset ($departement)) {
                     echo "class = 'actual'";
                 } ?> href="Departement.php"> Département</a></li>
+            <li><a <?php if (isset ($avis)) {
+                    echo "class = 'actual'";
+                } ?> href="avis.php"> Avis </a></li>
             <li><a <?php if (isset ($etudiant)) {
                     echo "class = 'actual'";
-                } ?> href="Etudiants.php"> Etudiants</a></li>
+                } ?> href="etudiants.php">Etudiants</a></li>
             <li><a <?php if (isset ($connexion)) {
                     echo "class = 'actual'";
-                } ?> href="connexion.php">Connexion</a></li>
+                } ?> href="connexion.php">Connexion </a></li>
+
+
         </ul>
     </nav>
     <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
@@ -29,7 +34,7 @@
             } ?> href="Departement.php"> Département</a></li>
         <li><a <?php if (isset ($etudiant)) {
                 echo "class = 'actual'";
-            } ?> href="Etudiants.php"> Etudiants</a></li>
+            } ?> href="avis.php"> Etudiants</a></li>
         <li><a <?php if (isset ($connexion)) {
                 echo "class = 'actual'";
             } ?> href="connexion.php">Connexion</a></li>
