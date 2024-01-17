@@ -90,7 +90,7 @@ img {
     z-index: 5000;
     width: 100%;
     margin: 0;
-    background: rgba(36,109,154, 0.9);
+    background: rgba(36,109,154);
 }
 
 .menu li a {
