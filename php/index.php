@@ -32,11 +32,9 @@
                 • Le BUT Informatique est un diplôme national dont l'objectif est de former des informaticiens
                 généralistes.
                 Le département informatique d'Aix-en-provence permet de se former en tant que développeur, ainsi qu’à l’administration et la
-                sécurisation de systèmes informatiques communicants. Les informaticiens issus de cette formation
-                possèdent
-                des compétences à la fois pratiques et théoriques leur permettant d'envisager une insertion
-                professionnelle
-                immédiate ou une poursuite d'études.
+                sécurisation de systèmes informatiques communicants. A la fin de cette formation, les étudiants
+                possèdent des compétences à la fois pratiques et théoriques leur permettant d'envisager une insertion dans le milieu
+                professionnel immédiate ou une poursuite d'études.
 
                 Le département informatique d'Aix-en-Provence propose deux parcours dès la 2ème année :
                 <br>
