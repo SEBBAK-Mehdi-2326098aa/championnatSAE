@@ -67,7 +67,7 @@ else {
 }
 echo ' <hr id = "separation" >';
 
-$query = $db->prepare("SELECT note, message, auteur FROM avis ORDER BY id_avis DESC");
+$query = $db->prepare("SELECT note, message, auteur FROM avis ORDER BY id_avis ASC");
 $query->execute();
 
 

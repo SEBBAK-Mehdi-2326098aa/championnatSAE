@@ -1,5 +1,30 @@
+/* style qui s'applique à toutes les pages lorsque nous sommes en mode moderne*/
+
+
+
+html {
+    overflow-x: hidden;
+    padding-top: 100px;
+    background-image: url("https://static.vecteezy.com/ti/vecteur-libre/t2/696278-fond-noir-texture-gratuit-vectoriel.jpg" );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
+
+#formulaire-contact{
+    font-weight: 900;
+    font-size: 2em;
+    color: white;
+}
+footer a :hover {
+    transition: all ease-in-out;
+    color: white;
+}
 * {
-    font-family: "Candara Light", serif;
+    color: white;
+    font-family: Klavika Basic ;
     margin: 0;
 
     padding: 0;
@@ -8,24 +33,15 @@
 }
 
 
-html {
-    background-image: url("https://static9.depositphotos.com/1177973/1132/i/450/depositphotos_11320421-stock-photo-chess-board-with-chess-pieces.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100%;
-}
-
 header {
     width: 100%;
 }
 
 #changementTheme {
-    background-color: darkslategrey;
+    background-color: #1a82a5;
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 0;
     margin: 0.5em;
     border-radius: 15%;
     padding: 1em;
@@ -35,35 +51,29 @@ header {
     z-index: 5001;
 }
 
-.logo1 {
-    display: none;
+img {
+    width: 5%;
+    height: auto;
+    border-radius: 50px;
 }
 
+
+
+/* partie qui dimensionne le logo et le fait tourner en continu*/
 .logo {
-    animation: rotation 5s infinite linear;
-    width: 3em;
-    border-radius: 15px;
+
+    width: 9em;
+    border-radius: 150px;
     margin: 10px 20px;
-    position: fixed;
-    top: 1px;
-    left: 10px;
     z-index: 5000;
 }
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
-}
-
+/* Gestion du menu afficher en mode moderne*/
 .menu {
 
     top: 0;
     font-size: 2em;
-    height: 2em;
+    height: 3em;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -72,14 +82,15 @@ header {
     z-index: 5000;
     width: 100%;
     margin: 0;
-    background: saddlebrown;
+    background: black;
 }
 
 .menu li a {
+
+    border-radius: 0px;
     font-size: 0.7em;
     color: white;
     font-weight: bold;
-    border-radius: 15px;
     padding: 0.3em;
     transition: 300ms ease-in-out;
 }
@@ -93,21 +104,23 @@ header {
 }
 
 .menu li a:hover {
+    border: solid white;
     display: block;
-    color: black;
-    background: sandybrown;
+    color: white;
     transform: scale(1.1);
 
 }
 
+/* colore la case du menu correspondant à la page affichée*/
 .actual {
+    border: solid;
     color: white;
     font-weight: bold;
     text-decoration: none;
-    background: sandybrown;
     border-radius: 15px;
 }
 
+/* Gestion du menu afficher en mode mobile*/
 .menuHamburger {
     display: none;
 }
@@ -132,7 +145,7 @@ header {
         height: 10em;
         width: 100%;
 
-        background: rgba(37, 17, 2, 0.9);
+
         position: fixed;
         top: 0;
         z-index: 5000;
@@ -153,8 +166,8 @@ header {
 
     .menuDeroulantActif li a:hover {
 
-        color: black;
-        background: rosybrown;
+        color: white;
+        background: lightseagreen;
         transform: scale(1.1);
 
     }

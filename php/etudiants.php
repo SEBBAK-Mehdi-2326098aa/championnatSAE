@@ -15,7 +15,7 @@ include "navbar.php";
     <link class="classique" href="../css/style.css" rel="stylesheet">
     <link class="traditionnel" disabled href="../css/style-sombre.css" rel="stylesheet">
     <link class="classique" href="../css/etudiants.css" rel="stylesheet">
-    <link class="traditionnel" disabled href="../css/avis-sombre.css" rel="stylesheet">
+    <link class="traditionnel" disabled href="../css/etudiant-sombre.css" rel="stylesheet">
     <link href=/ rel="shortcut icon" type="image/png"/>
     <link href="../assets/favicone/favicon-96x96.png" rel="shortcut icon">
     <script defer src="../js/main.js"></script>

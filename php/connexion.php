@@ -81,9 +81,6 @@ $connexion = true;
 include "navbar.php";
 ?>
 
-
-<img alt="logo Aix en provence" class="logo" src=../assets/logo_iut.png>
-
 <?php
 if (!isset($_SESSION["logIn"])) {
     echo ' 
@@ -124,21 +121,10 @@ if (!isset($_SESSION["logIn"])) {
         <li>
             <a href="https://www.amazon.fr/s?k=apprendre+echecs+debutant&adgrpid=1358997397537450&hvadid=84937795864812&hvbmt=be&hvdev=c&hvlocphy=126215&hvnetw=o&hvqmt=e&hvtargid=kwd-84937916741115%3Aloc-66&hydadcr=7679_2271176&tag=hydfrmsn-21&ref=pd_sl_1vrkydbapb_e">Quelque
                 guides intéressant</a></li>
-        <li>Questions ? : <a href="https://www.chess.com/fr/blog/Skaki72/les-problemes-pourquoi-et-comment">Ce qui
+        <li> <a href="https://www.chess.com/fr/blog/Skaki72/les-problemes-pourquoi-et-comment">Questions ? : Ce qui
                 revient souvent</a></li>
     </ul>
-</section>
-<section class="surnous">
-    <h4>Pour contacter le meilleur joueur directement</h4>
-    <img alt="email" class="detail" src="../assets/email.png">
-    <p><a href="mailto:chessweb7@gmail.com"> chessweb7@gmail.com</a></p>
-    <img alt="tel" class="detail" src="../assets/phone-call.png">
-    <p><a href="tel:+3307689402"> +33 07689402</a></p>
-    <img alt="gps" class="detail" src="../assets/gps-navigation.png">
-    <p>
-        <a href="https://www.bing.com/ck/a?!&&p=cc065442ed407890JmltdHM9MTcwNDg0NDgwMCZpZ3VpZD0yOTVkNTYzOS1mODJjLTZhYzItMWIyZS00NWJmZjlmMTZiNDAmaW5zaWQ9NTY4NQ&ptn=3&ver=2&hsh=3&fclid=295d5639-f82c-6ac2-1b2e-45bff9f16b40&u=a1L21hcHM_Jm1lcGk9MjN-flRvcE9mUGFnZX5NYXBfSW1hZ2UmdHk9MTgmcT1SdWUlMjBNYW51ZWwlMkMlMjAxMzEwMCUyMEFpeC1lbi1Qcm92ZW5jZSZwcG9pcz00My41MjgwNzU1NDkzNzFfNS40NTQzNTM1NTE0MjQxM19SdWUlMjBNYW51ZWwlMkMlMjAxMzEwMCUyMEFpeC1lbi1Qcm92ZW5jZV9-JmNwPTQzLjUyODA3Nn41LjQ1NDM1NCZsdmw9MTYmdj0yJnNWPTEmRk9STT1NSVJF&ntb=1">
-            Rue de Manuel - 13100</a></p>
-</section>
+
 </body>
 <footer class="pied-contact">
     <p>Site sur le département informatique- Tous droits reviennent à Christine Makssoud</a></p>

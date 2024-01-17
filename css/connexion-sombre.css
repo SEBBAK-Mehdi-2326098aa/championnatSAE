@@ -1,10 +1,21 @@
-
+/* Gère les éléments principaux de la page connexion */
 h1 {
     font-weight: 900;
     font-size: 6em;
     margin-top: 100px;
     color: whitesmoke;
-    text-shadow: 2px 2px saddlebrown;
+    text-shadow: 2px 2px darkslategrey;
+}
+.indication {
+    font-size: 4em;
+}
+
+#boutonDeconnexion {
+    font-size: 2em;
+    border: solid;
+    background: #1a82a5;
+    border-radius: 10px;
+    font-weight: 900;
 }
 
 header {
@@ -12,15 +23,17 @@ header {
 }
 
 body {
-    color: white;
+    padding-top: 10%;
     text-align: center;
     height: fit-content;
     display: flex;
     flex-direction: column;
 }
 
-/* css page contact*/
-h2 {
+/* css page connexion*/
+h2 ,h3 ,h4{
+
+    color: #318A9A;
     animation: contacts 1s ease;
 }
 
@@ -36,7 +49,7 @@ h2 {
     padding: 3em;
     backdrop-filter: blur(2px);
     width: 30%;
-    border: 3px solid white;
+    border: 3px solid black;
     border-radius: 15px;
 }
 
@@ -93,7 +106,7 @@ textarea:focus {
     justify-content: center;
     margin: auto;
     padding-bottom: 0.5em;
-    color: saddlebrown;
+    color: darkslategray;
     font-weight: bold;
 }
 
@@ -130,12 +143,7 @@ textarea::placeholder {
     justify-content: space-between;
 }
 
-h3 {
-    font-weight: bold;
-    color: white;
-    padding: 0.5em;
-    margin-bottom: 2em;
-}
+
 
 .plus ul {
     padding: 2em;
@@ -233,6 +241,7 @@ h3 {
 }
 
 @media (max-width: 1000px) {
+
     h1 {
         font-size: 4em;
     }
@@ -255,16 +264,16 @@ h3 {
     }
 
     .label, textarea {
-        margin: auto;
+        margin: 0.1em 0;
         padding-bottom: 0.1em;
     }
 }
 
+/* media queries pour que la page soit responsive*/
 @media (max-width: 670px) {
     h2 {
         font-size: 1em;
     }
-
 
     .contact {
         padding-left: 0;

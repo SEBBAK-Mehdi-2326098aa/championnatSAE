@@ -9,7 +9,7 @@
     <link class="classique" href="../css/style.css" rel="stylesheet">
     <link class="traditionnel" disabled href="../css/style-sombre.css" rel="stylesheet">
     <link class="classique" href="../css/departement.css" rel="stylesheet">
-    <link class="traditionnel" disabled href="../css/apprendre-traditionnel.css" rel="stylesheet">
+    <link class="traditionnel" disabled href="../css/departement-sombre.css" rel="stylesheet">
     <link href=/ rel="shortcut icon" type="image/png"/>
     <link href="../assets/favicone/favicon-96x96.png" rel="shortcut icon">
     <script defer src="../js/main.js"></script>

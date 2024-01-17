@@ -35,10 +35,10 @@ header {
 }
 
 #changementTheme {
-    background-color: saddlebrown;
+    background-color: black;
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 0;
     margin: 0.5em;
     border-radius: 15%;
     padding: 1em;

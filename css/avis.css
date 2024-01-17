@@ -1,8 +1,14 @@
 #messageConnexion {
+    padding-top: 5%;
     flex-direction: column;
     display: flex;
     font-size: 2em;
     align-items: center;
+}
+#messageConnexion a {
+
+    padding-bottom: 5%;
+    color: #1a82a5;
 }
 
 h1 {

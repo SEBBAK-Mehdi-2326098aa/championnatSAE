@@ -1,3 +1,6 @@
+html {
+
+}
 
 #informaix
 {
@@ -11,10 +14,14 @@
 
 }
 #sections{
+
     height: 200%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+#sections p {
+    color: black;
 }
 #tutorat
 {
@@ -80,7 +87,7 @@ h2,h3,h4,h5{
 
 #annonce img:hover {
     filter: brightness(0.5);
- }
+}
 
 #annonce{
     padding-bottom: 20%;
