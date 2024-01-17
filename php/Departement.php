@@ -46,48 +46,48 @@ include "navbar.php";
         <string>Matières informatiques</string>
         <br>
         <br>
-        -Programmation et programmation orientée objet<br>
-        -Programmation web côté serveur<br>
-        -Architecture des ordinateurs<br>
-        -Systèmes d'exploitation et réseaux<br>
-        -Programmation répartie<br>
-        -Programmation et administration bases de données<br>
-        -Analyse et conception des systèmes d'information<br>
-        -Interfaces hommes-machine<br>
-        -Conception de documents et interfaces numériques<br>
-        -Conception et développement d'applications mobiles<br>
-        -Gestion de projet informatique<br>
-        -Méthodologie de la production d'applications<br>
-        -Informatique embarquée et temps réel<br>
+        - Programmation et programmation orientée objet<br>
+        - Programmation web côté serveur<br>
+        - Architecture des ordinateurs<br>
+        - Systèmes d'exploitation et réseaux<br>
+        - Programmation répartie<br>
+        - Programmation et administration bases de données<br>
+        - Analyse et conception des systèmes d'information<br>
+        - Interfaces hommes-machine<br>
+        - Conception de documents et interfaces numériques<br>
+        - Conception et développement d'applications mobiles<br>
+        - Gestion de projet informatique<br>
+        - Méthodologie de la production d'applications<br>
+        - Informatique embarquée et temps réel<br>
         <br>
         <br>
         <string> Langages/Logiciels utilisés</string>
         <br>
         <br>
-        -Langages de programmation : C, C++, Java, PHP, JavaScript, SQL, PL/SQL, HTML 5, CSS 3...<br>
-        -Systèmes d'exploitation : Linux, Windows, Android (option)<br>
-        -Bases de données : Oracle, MySQL<br>
-        -Analyse et conception : UML<br>
-        -Environnements de développement : NetBeans, Eclipse, VisuualStudio, WampServer , XMLSpy (option), ...<br>
-        -Logiciels - Outils : MS-Projet, PowerAMC, Visual Paradigm, SQL Developer, Maple, R, VirtualBox, Dreamweaver
+        - Langages de programmation : C, C++, Java, PHP, JavaScript, SQL, PL/SQL, HTML 5, CSS 3...<br>
+        - Systèmes d'exploitation : Linux, Windows, Android (option)<br>
+        - Bases de données : Oracle, MySQL<br>
+        - Analyse et conception : UML<br>
+        - Environnements de développement : NetBeans, Eclipse, VisuualStudio, WampServer , XMLSpy (option), ...<br>
+        - Logiciels - Outils : MS-Projet, PowerAMC, Visual Paradigm, SQL Developer, Maple, R, VirtualBox, Dreamweaver
         (option) , Notepad++, Filezilla, ERP Dolibarr, ...<br>
-        -Bureautique : Word, PowerPoint, Excel, Access, Publisher, Freemind, OpenOffice,<br>
+        - Bureautique : Word, PowerPoint, Excel, Access, Publisher, Freemind, OpenOffice,<br>
 
     </p>
     <h4 id="2">Les Enseignements généraux </h4>
     <p>
-        -Les mathématiques : mathématiques discrètes, algèbre linéaire, graphes et langages, analyse et méthodes
+        -   Les mathématiques : mathématiques discrètes, algèbre linéaire, graphes et langages, analyse et méthodes
         numériques, probabilités et statistiques.<br>
         <br>
-        -La communication : résumé, compte-rendu, présentation orale, prise de parole en public, jeu de rôle,
+        -   La communication : résumé, compte-rendu, présentation orale, prise de parole en public, jeu de rôle,
         explication, dynamique des groupes, rédaction d'un dossier de candidature avec lettres et CV et entretiens
         de recrutement.<br>
         <br>
-        -L'anglais général et technique : utilisation de tutoriels techniques, articles scientifiques ou généraux,
+        -   L'anglais général et technique : utilisation de tutoriels techniques, articles scientifiques ou généraux,
         travail à partir de supports multimédia variés, réunions, conversations téléphoniques, simulations de
         situations professionnelles et compte-rendu <br>
         <br>
-        -Et la connaissance du monde de l'entreprise et du travail : environnement économique, fonctionnements des
+        -   Et la connaissance du monde de l'entreprise et du travail : environnement économique, fonctionnements des
         organisations, environnement comptable, financier, juridique et social, droit des technologies de
         l'information et de la communication et gestion des systèmes d'information <br>
         <br>
