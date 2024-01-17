@@ -1,0 +1,95 @@
+/* Style du formulaire */
+.container_formulaire {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+}
+
+form {
+    padding: 3em;
+    background-color: rgba(255, 255, 255, 0.409);
+    border-radius: 10px;
+}
+
+form h1 {
+    font-size: 2em;
+    text-shadow: none;
+}
+
+form .separation {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(18, 6, 243);
+
+}
+
+
+form .corps_formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+form .corps_formulaire .groupe {
+    margin-top: 0.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+form .corps_formulaire .gauche .groupe input {
+    margin-top: 0.5em;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: rgba(18, 6, 243);
+    border-radius: 5px;
+}
+
+form .corps_formulaire .gauche .groupe i {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+    color: rgba(18, 6, 243, 0.669);
+}
+
+form .corps_formulaire .droite {
+    margin-left: 40px;
+}
+
+form .corps_formulaire .droite .groupe {
+    height: 100%;
+}
+
+form .corps_formulaire .droite .groupe textarea {
+    margin-top: 5px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    height: 71%;
+    background-color: #f8f8f8;
+    border: 1px solid rgb(18, 6, 243);
+    border-radius: 5px;
+
+}
+
+form .pied_formulaire button {
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(18, 6, 243);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .pied_formulaire button:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    background-color: rgb(7, 2, 88);
+}

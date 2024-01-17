@@ -19,7 +19,6 @@ a:hover {
 ul {
 
     margin: 0 3em;
-    border-radius: 8px;
 }
 
 h1 {
@@ -139,7 +138,7 @@ h4 {
     font-weight: bold;
     padding: 0.3em;
     border-radius: 1em;
-    color: white;
+    color: black;
 }
 
 .liste li {
@@ -161,7 +160,8 @@ h4 {
 }
 
 .explications p {
-    color: white;
+    font-weight: 900;
+    color: black;
     box-shadow: 1em 2em 5em black;
     background-color: transparent;
     backdrop-filter: blur(10px);

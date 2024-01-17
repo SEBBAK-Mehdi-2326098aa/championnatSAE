@@ -93,8 +93,8 @@ if (!isset($_SESSION["logIn"])) {
     <label class="label" for="email">E-mail</label><br>
     <input class="entrer" id="email" name="email" placeholder="votremail@gmail.com" type="email"><br>
     <label class="label" for="sujet">Mot de passe</label><br>
-    <input class="entrer" id="sujet" name="mot_de_passe" placeholder="objet" type="password"><br>
-    <input type="submit" id="envoyer" name="enregistrer" value="Dorian">
+    <input class="entrer" id="sujet" name="mot_de_passe" placeholder="Mot de passe " type="password"><br>
+    <input type="submit" id="envoyer" name="enregistrer" value="Envoyer">
 
 </form>
 ';
@@ -114,7 +114,7 @@ if (!isset($_SESSION["logIn"])) {
     <input class="entrer" id="email" name="email-verif" placeholder="votremail@gmail.com" type="email"><br>
     <label class="label" for="sujet">Mot de passe</label><br>
     <input class="entrer" id="sujet" name="mot_de_passe-verif" placeholder="mot de passe" type="password"><br>
-    <input type="submit" id="envoyer" name="enregistrer-verif" value="Dorian">
+    <input type="submit" id="envoyer" name="enregistrer-verif" value="Envoyer">
 </form>
 <section class="plus">
     <ul>
@@ -138,12 +138,13 @@ if (!isset($_SESSION["logIn"])) {
         <a href="https://www.bing.com/ck/a?!&&p=cc065442ed407890JmltdHM9MTcwNDg0NDgwMCZpZ3VpZD0yOTVkNTYzOS1mODJjLTZhYzItMWIyZS00NWJmZjlmMTZiNDAmaW5zaWQ9NTY4NQ&ptn=3&ver=2&hsh=3&fclid=295d5639-f82c-6ac2-1b2e-45bff9f16b40&u=a1L21hcHM_Jm1lcGk9MjN-flRvcE9mUGFnZX5NYXBfSW1hZ2UmdHk9MTgmcT1SdWUlMjBNYW51ZWwlMkMlMjAxMzEwMCUyMEFpeC1lbi1Qcm92ZW5jZSZwcG9pcz00My41MjgwNzU1NDkzNzFfNS40NTQzNTM1NTE0MjQxM19SdWUlMjBNYW51ZWwlMkMlMjAxMzEwMCUyMEFpeC1lbi1Qcm92ZW5jZV9-JmNwPTQzLjUyODA3Nn41LjQ1NDM1NCZsdmw9MTYmdj0yJnNWPTEmRk9STT1NSVJF&ntb=1">
             Rue de Manuel - 13100</a></p>
 </section>
-<hr>
-<footer class="pied-contact">
-    <p>Site sur les échecs- Tous droits reviennent au site <a href="https://www.chess.com/fr">chess.com</a></p>
-</footer>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+<footer class="pied-contact">
+    <p>Site sur le département informatique- Tous droits reviennent à Christine Makssoud</a></p>
+
+<hr>
+<a href="formulaire.php" id="formulaire-contact"> Nous Contacter ! </a>
+
+</footer>
 
 </html>

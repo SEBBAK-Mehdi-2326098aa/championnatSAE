@@ -1,31 +1,92 @@
-#auteur{
+#messageConnexion {
+    flex-direction: column;
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+}
+
+h1 {
+    padding-bottom: 10%;
+    font-size: 1em;
+}
+
+.contact {
+    animation: contacts 1s ease;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 3em;
+    backdrop-filter: blur(2px);
+    width: 30%;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+#Contact {
+    background-color: rgb(236, 244, 244);
+    border-radius: 15px;
+    padding-left: 2em;
+}
+
+.entrer {
+    border: none;
+    outline: none;
+    display: flex;
+    width: 100%;
+    height: 3em;
+    background-color: rgb(236, 244, 244);
+    border-radius: 15px;
+    padding-left: 2em;
+}
+
+#envoyer {
+    cursor: pointer;
+    display: flex;
+    justify-self: flex-start;
+    margin: auto;
+    border: 1px solid black;
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 0.5em;
+    font-size: 0.7em;
+}
+
+#auteur {
     font-weight: 900;
     font-size: 3em;
 }
-#avis{
+
+#avis {
     padding-bottom: 50px;
     color: darkcyan;
     font-size: 2em;
     font-weight: 900;
 
 }
-#separation{
+
+#separation {
     color: darkred;
-    border : solid;
+    border: solid;
 }
-#formulaire{
+
+#formulaire {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 #etoile {
     border-radius: 50px;
 }
+
 main {
     padding-left: 2px;
     margin: auto;
     padding-top: 10%;
 }
+
 .retour {
     margin: 15px;
 }

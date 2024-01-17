@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <?php
+    include "navbar.php";
+    ?>
+    <!-- Balise meta -->
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Cette page est un formulaire afin de pouvoir nous contacter si l'utilisateur à un message à nous faire passer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <!-- Titre de la page web -->
+    <title>Nous contacter</title>
+
+    <!-- Lien vers les pages de style et du favicon -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link id="css" rel="stylesheet" href="../css/formulaire.css">
+
+
+    <!-- Lien vers les emojies font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+<!-- Formaulaire -->
+<div class="container_formulaire">
+    <form id="form"
+          action="mailto:coline.albano@etu.univ-amu.fr?subject=Impression%20sur%20le%20département%20Informatique"
+          method="post" enctype="text/plain">
+        <h1>Votre avis</h1>
+        <!-- Ligne de séparation -->
+        <div class="separation"></div>
+        <div class="corps_formulaire">
+            <!-- Partie gauche du formulaire -->
+            <div class="gauche">
+                <div class="groupe">
+                    <label>Nom : </label>
+                    <input type="text" name="Nom " value=" ">
+                    <i class="fa-solid fa-user-secret"></i>
+                </div>
+                <div class="groupe">
+                    <label>Prénom : </label>
+                    <input id="prenom" type="text" name="Prenom " value=" ">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                </div>
+                <div class="groupe">
+                    <label>Telephone : </label>
+                    <input id="tel" type="text" name="Telephone " value=" ">
+                    <i class="fa-solid fa-mobile-retro"></i>
+                </div>
+            </div>
+            <i class=""></i>
+            <!-- Partie droite du formulaire -->
+            <div class="droite">
+                <div class="groupe">
+                    <label>Message : </label>
+                    <textarea name="Votre avis " rows="10" cols="30" placeholder="Votre avis..."></textarea><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="pied_formulaire">
+            <button type="submit" value="Envoyer">Envoyez votre message</button>
+        </div>
+    </form>
+</div>
+
+<!-- Lien avec le javascript pour changer le thème et adapter le menu au format téléphone-->
+<script src="../Javascript/menu.js" defer></script>
+</body>
+
+</html>
