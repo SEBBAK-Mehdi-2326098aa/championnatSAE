@@ -58,12 +58,12 @@ img {
 /* partie qui dimensionne le logo et le fait tourner en continu*/
 .logo {
     animation: rotation 5s infinite linear;
-    width: 3em;
+    width: 5em;
     border-radius: 150px;
     margin: 10px 20px;
     position: fixed;
-    top: 1px;
-    left: 10px;
+    top: 5px;
+    left: 0;
     z-index: 5000;
 }
 
@@ -81,7 +81,7 @@ img {
 
     top: 0;
     font-size: 2em;
-    height: 2em;
+    height: 3em;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -90,14 +90,15 @@ img {
     z-index: 5000;
     width: 100%;
     margin: 0;
-    background: #318A9A;
+    background: rgba(36,109,154, 0.9);
 }
 
 .menu li a {
+
+    border-radius: 0px;
     font-size: 0.7em;
     color: white;
     font-weight: bold;
-    border-radius: 15px;
     padding: 0.3em;
     transition: 300ms ease-in-out;
 }
@@ -111,6 +112,7 @@ img {
 }
 
 .menu li a:hover {
+    border: solid white;
     display: block;
     color: black;
     background: lightseagreen;
@@ -120,6 +122,7 @@ img {
 
 /* colore la case du menu correspondant à la page affichée*/
 .actual {
+    border: solid;
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -152,7 +155,7 @@ img {
         height: 10em;
         width: 100%;
 
-        background: rgba(47, 79, 79, 0.9);
+
         position: fixed;
         top: 0;
         z-index: 5000;

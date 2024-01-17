@@ -23,17 +23,33 @@ include "navbar.php";
 </head>
 
 <main>
-<section id="intro">
-    <h1>Annonce Etudiantes</h1>
-    <p> Cette section permet de voir les actualités du département ! </p>
-</section>
+    <section id="intro">
+        <h1>Annonce Etudiantes</h1>
+        <p> Cette section permet de voir les actualités du département ! </p>
+    </section>
 
     <div id="annonce">
-    <img src="../assets/logoInformaix_1.png">
-    <img src="../assets/entraide_1610555060918-jpg.png">
-     <img src="../assets/image_teacher.jpg">
+        <img src="../assets/logoInformaix_1.png">
+        <img src="../assets/entraide_1610555060918-jpg.png">
+        <img src="../assets/image_teacher.jpg">
         <img src="../assets/flambeau.jpg"
     </div>
-</main>
 
+
+</main>
+<div id="informaix">
+
+    <h2 class=titresection>INFORM'AIX</h2>
+    <p> EVENEMENTS : Le tournoi Smash Bros la semaine prochaine, venez nombreux et <label class="inscription"> inscrivez
+            vous ici </label> <br> <br>
+        EVENEMENTS : La nuit de l'info est terminé, retrouvez tout ces excellents souvenirs sur nos <label
+                class=inscription>réseaux sociaux</label> <br> <br> EVENEMENTS
+        INFORMATION : Le stock de nourriture est de nouveau rempli, venez nous rendre visite <br> <br>
+        INFORMATION : Les Kinder Bueno sont en réduction de 50% Venez vite avant que ça parte. <br> <br>
+        EVENEMENTS : Les éléctions de l'IUT sont terminés, venez voir les <label class = inscription> résulats ici </label> !
+    </p>
+
+</div>
+
+</div>
 <body>
