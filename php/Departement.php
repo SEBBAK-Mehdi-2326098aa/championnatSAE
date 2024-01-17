@@ -36,8 +36,8 @@ include "navbar.php";
     <nav class="sommaire">
         <h3 id="t2">Les matières en 1ère année</h3>
         <p id="petit-texte">En première année l'enseignement est général avec des matières mélangeant la partie
-            informatique, et une partie plus générale. L'informatique compte pour ...% et la partie générale pour
-            ...%.</p>
+            informatique, et une partie plus générale. L'informatique compte pour 60% et la partie générale pour
+            40%.</p>
     </nav>
     <h4 id="1"> Les Spécialités Informatiques </h4>
     <p>

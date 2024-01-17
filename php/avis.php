@@ -65,6 +65,7 @@ else {
 </section>
 ";
 }
+echo ' <hr id = "separation" >';
 
 $query = $db->prepare("SELECT note, message, auteur FROM avis ORDER BY id_avis DESC");
 $query->execute();
@@ -87,7 +88,7 @@ foreach ($query->fetchAll() as $avisData) {
 
     echo '<p class="retour" id="auteur">' . $auteur . '</p> ';
     for ($i = 0; $i < $note; ++$i) {
-        echo '<img class="retour" id="etoile" src="../assets/etoile.webp" alt="etoile" height="50px">';
+        echo '<img class="retour" id="etoile" src="../assets/etoile6.png" alt="etoile" height="50px">';
     }
 
     echo '<p class="retour" id="avis">' . $message . ' <hr id="separation"> </p>';

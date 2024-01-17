@@ -54,11 +54,13 @@ h1 {
 }
 
 #auteur {
+    color: rgba(36,109,154);
     font-weight: 900;
     font-size: 3em;
 }
 
 #avis {
+    color: rgba(36,109,154);
     padding-bottom: 50px;
     font-size: 2em;
     font-weight: 900;
@@ -66,7 +68,7 @@ h1 {
 }
 
 #separation {
-    color: darkred;
+    color: rgba(36,109,154);
     border: solid;
 }
 

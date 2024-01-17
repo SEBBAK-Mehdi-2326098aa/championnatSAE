@@ -45,8 +45,6 @@ include "navbar.php";
         </p>
     </section>
 
-
-
     <div class="cards">
         <a href="#" class="card">
             <div class="card-background" style="background-image: url(https://iut.univ-amu.fr/sites/default/files/media-image/DSC_0010.JPG)"></div>
