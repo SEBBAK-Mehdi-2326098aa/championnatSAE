@@ -102,7 +102,7 @@ if (!isset($_SESSION["logIn"])) {
   else {
         echo '
         <form action="connexion.php" method="post">
-            <input type="submit" name="deconnexion" value="Se déconnecter">
+            <input id="boutonDeconnexion" type="submit" name="deconnexion" value="Déconnexion">
         </form>
     ';
     }
