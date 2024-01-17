@@ -75,8 +75,9 @@ if (isset($_POST ["enregistrer-verif"])) {
 <?php
 
 if (isset($_POST["logIN"])){
-    $connexion = true;
+
 }
+$connexion = true;
 include "navbar.php";
 ?>
 
@@ -87,9 +88,8 @@ include "navbar.php";
 if (!isset($_SESSION["logIn"])) {
     echo ' 
 <!--     le formulaire de contact avec les differents champs a remplir et le bouton envoyer-->
-<h2>Inscription !</h2>
+<h2 class = "indication">Inscription !</h2>
 <form action="connexion.php" class="contact" method="post">
-    <h3>Inscription !</h3>
     <label class="label" for="email">E-mail</label><br>
     <input class="entrer" id="email" name="email" placeholder="votremail@gmail.com" type="email"><br>
     <label class="label" for="sujet">Mot de passe</label><br>
@@ -108,8 +108,9 @@ if (!isset($_SESSION["logIn"])) {
     }
 
 ?>
+
+<h3 class = "indication"> Connexion!</h3>
 <form action="connexion.php" class="contact" method="post">
-    <h4> Connexion!</h4>
     <label class="label" for="email">E-mail</label><br>
     <input class="entrer" id="email" name="email-verif" placeholder="votremail@gmail.com" type="email"><br>
     <label class="label" for="sujet">Mot de passe</label><br>
