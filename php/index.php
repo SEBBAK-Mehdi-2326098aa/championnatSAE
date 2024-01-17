@@ -67,7 +67,7 @@ include "navbar.php";
         <a href="#" class="card">
             <div class="card-background" style="background-image: url(https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/c_scale,w_400/ncom/software/switch/70070000003621/e7cfb7d7b2b5b1bfc29862baa12a4f854d58274f974e616a6006785cda7eaa52)"></div>
             <div class="card-content">
-                <p>Divers éléments organisé par l'IUT</p>
+                <p>Le BDE organise des évenemnts comme des tournois</p>
                 <h3>Tournoi Smash</h3>
             </div>
         </a>
