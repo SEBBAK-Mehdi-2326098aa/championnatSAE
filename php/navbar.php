@@ -40,7 +40,7 @@
             } ?> href="connexion.php">Connexion</a></li>
 
     </ul>
-    <img alt="logo Aix en provence" class="logo" src=../assets/logo_iut.png>
+    <img alt="logo Aix en provence" class="logo" src=../assets/logoAix.svg>
 
 </header>
 
