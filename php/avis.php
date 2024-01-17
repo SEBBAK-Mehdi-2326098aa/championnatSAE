@@ -60,7 +60,7 @@ else {
 
     echo "
 <section id='messageConnexion'>
-<p> Vous n'avez pas le droit d'accéder à cette page tant que vous n'êtes pas Connecté</p> 
+<p> Vous n'avez pas le droit d'envoyer un avis sur le département tant que vous n'êtes pas Connecté</p> 
 <a href='connexion.php'> Connectez-vous ici </a>' 
 </section>
 ";
