@@ -43,7 +43,7 @@ include "navbar.php";
 
 if (isset($_SESSION["logIn"])) {
     echo '
-    <form id="contact"  action="Etudiants.php" class="contact" method="post">
+    <form id="contact"  action="avis.php" class="contact" method="post">
         <h1>Votre avis sur l\'IUT nous intéresse !</h1>
         <label class="label" for="sujet"> Auteur </label><br>
         <input class="entrer" id="email" name="auteur" placeholder="Auteur ?" type="text"><br>
