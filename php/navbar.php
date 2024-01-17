@@ -4,6 +4,7 @@
 
     <nav>
         <ul class="menu">
+            <li> <img alt="logo Aix en provence" class="logo" src=../assets/logoAix.svg></li>
             <li><a <?php if (isset ($presentation)) {
                     echo "class = 'actual'";
                 } ?>href="index.php">Presentation</a></li>
@@ -40,7 +41,7 @@
             } ?> href="connexion.php">Connexion</a></li>
 
     </ul>
-    <img alt="logo Aix en provence" class="logo" src=../assets/logoAix.svg>
+
 
 </header>
 

@@ -57,23 +57,11 @@ img {
 
 /* partie qui dimensionne le logo et le fait tourner en continu*/
 .logo {
-    animation: rotation 5s infinite linear;
-    width: 5em;
+
+    width: 9em;
     border-radius: 150px;
     margin: 10px 20px;
-    position: fixed;
-    top: 5px;
-    left: 0;
     z-index: 5000;
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
 }
 
 /* Gestion du menu afficher en mode moderne*/
@@ -115,7 +103,6 @@ img {
     border: solid white;
     display: block;
     color: black;
-    background: lightseagreen;
     transform: scale(1.1);
 
 }
@@ -126,7 +113,6 @@ img {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    background: cadetblue;
     border-radius: 15px;
 }
 
