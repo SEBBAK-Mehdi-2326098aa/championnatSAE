@@ -27,10 +27,8 @@ include "navbar.php";
 
 
 <main class="tuto">
-    <video controls="controls">
-        <source src="../assets/Apprends%20à%20jouer%20aux%20échecs%20en%20moins%20de%2010%20minutes.mp4"
-                type="video/mp4">
-        <a href="https://www.youtube.com/embed/b3_p6pb8YcU?si=12ekI_xKKbD2ngXw">Video Youtube</a>
+    <video autoplay muted controls>
+        <source src="../assets/iutvideo.mp4" type="video/mp4">
     </video>
 </main>
 

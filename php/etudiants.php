@@ -32,7 +32,7 @@ include "navbar.php";
 
 
     <article class="container">
-        <img src="../assets/logoInformaix_1.png" alt="InformAix">
+        <img src="../assets/logoInformaix_1.png" alt="InformAix" >
         <h2>InformAix</h2>
         <p>loremdhjocbozhjfjhzfvjh zfvjohzb fvhz fvo fvojhz efvohjz fvnj rfhjv zfohv zofhv hozrfv ovokhzrv ohkrzgf vohjzr vpjhr gfbprfgbp rgpbjn erpgj nphgbprgbpjrgbprfgpfgpkb eprgb pdfg bhp frgbpd fgbp fgp rfpgjb erpbpgbprj gbpzrgbpzrj gbkpzrjgbjrgbj rg zrkjgnbkjr gbpf gbnkpdfgpkb dfklb </p>
     </article>
