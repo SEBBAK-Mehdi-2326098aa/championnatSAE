@@ -156,6 +156,22 @@ img {
     margin-bottom: 10px;
 }
 
+.evenement {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 15px;
+    justify-content: space-between;
+
+}
+.image-evenement{
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+
+
 h4 {
     font-weight: bold;
     padding: 1em;
@@ -205,7 +221,6 @@ h4 {
     .introduction {
         font-size: 2em;
         padding: 5%;
-
     }
 
     p {
@@ -264,4 +279,78 @@ h4 {
 
 h5 {
     display: none;
+}}
+
+/* Image cards  */
+
+
+.cards {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/*@media(min-width: 540px){*/
+/*    .cards {*/
+/*        grid-template-columns: repeat(2, 1fr);*/
+/*    }*/
+/*}*/
+
+/*@media(min-width: 960px){*/
+/*    .cards {*/
+/*        grid-template-columns: repeat(4, 1fr);*/
+/*    }*/
+/*}*/
+
+
+.card {
+    position: relative;
+    display: flex;
+flex-direction: row;
+
+    padding-bottom: 15%;
+}
+
+.card-background {
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform-origin: center;
+    transition: .2s;
+}
+
+.card:hover .card-background {
+    transform: scale(1.05) translateZ(0);
+}
+
+.cards:hover > .card:not(:hover) .card-background {
+    filter: brightness(0.5) saturate(0) contrast(1.0) blur(2px);
+}
+
+.card-content {
+    padding: 24px;
+    position: absolute;
+    font-family: arial, sans-serif;
+}
+
+.card-content p {
+    color: white;
+    font-size: .9rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.card-content h3 {
+    color: rgba(255, 255, 255, .9);
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
 }
