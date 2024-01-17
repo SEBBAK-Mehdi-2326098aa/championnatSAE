@@ -39,7 +39,7 @@ include "navbar.php";
 
     <article class="container">
         <img src="../assets/entraide_1610555060918-jpg.png" alt="entraide">
-        <h2 id="tutorat">Tutorat</h2>
+        <h2 >Tutorat</h2>
         <p>Les informations concernant les tutorats seront transmise ici </p>
     </article>
 
@@ -57,7 +57,9 @@ include "navbar.php";
     </div>
 
 </main>
-<div class="annonce" id="informaix">
+
+<div id="sections">
+<div id="informaix">
 
     <h2 class=titresection>INFORM'AIX</h2>
     <p> EVENEMENTS : Le tournoi Smash Bros la semaine prochaine, venez nombreux et <label class="inscription">
@@ -75,7 +77,7 @@ include "navbar.php";
 
 
 
-<div class="annonce" id="tutorat">
+<div  id="tutorat">
 
     <h2 class=titresection>Annonce Tutorat</h2>
     <p>
@@ -89,7 +91,7 @@ include "navbar.php";
 
 
 
-<div class="annonce" id="prof">
+<div  id="professeurs">
 
     <h2 class=titresection>Annonce des Professeurs</h2>
     <p>

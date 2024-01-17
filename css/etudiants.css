@@ -2,8 +2,36 @@ html {
 
 }
 
-#informaix, #3annee , #tutorat , #professeurs  {
+#informaix
+{
+    margin: auto;
+    background: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 
+}
+#sections{
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#tutorat
+{
+    margin: auto;
+    background: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+#professeurs
+{
     margin: auto;
     background: whitesmoke;
     align-items: center;
@@ -12,6 +40,17 @@ html {
     flex-direction: column;
     width: 50%;
 }
+#3annee
+{
+    margin: auto;
+    background: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
 .inscription{
     color: #1a82a5;
 }
@@ -29,7 +68,7 @@ h1, h2, h3 {
     justify-content: center;
 }
 h2,h3,h4,h5{
-    background: gray;
+    background: rgb(36,109,154);
 
 }
 
@@ -44,6 +83,7 @@ h2,h3,h4,h5{
  }
 
 #annonce{
+    padding-bottom: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

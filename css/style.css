@@ -5,12 +5,12 @@
     font-size: 2em;
     color: black;
 }
-footer a ::hover {
+footer a :hover {
     transition: all ease-in-out;
     color: #318A9A;
 }
 * {
-    font-family: "Candara Light", serif;
+    font-family: Klavika Basic ;
     margin: 0;
 
     padding: 0;
@@ -20,6 +20,7 @@ footer a ::hover {
 
 
 html {
+
     padding-top: 100px;
     background-image: url("https://media.istockphoto.com/id/1331579485/fr/vectoriel/arri%C3%A8re-plan-courbe-bleu-clair.jpg?s=612x612&w=0&k=20&c=0jOtpP5odloWjGNEtBWSrcQLo7Zj6iAUA5HuNSuClS8=" );
     background-size: cover;
