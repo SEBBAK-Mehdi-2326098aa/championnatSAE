@@ -1,6 +1,5 @@
 <header>
     <!--     le header avec le menu hamburger et le menu deroulant-->
-    <button aria-label="Changer de thème" id="changementTheme"></button>
 
     <nav>
         <ul class="menu">

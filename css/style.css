@@ -9,6 +9,7 @@
     color: white;
 }
 footer{
+    width: 100%;
     background: rgba(36,109,154);
 }
 footer a :hover {
