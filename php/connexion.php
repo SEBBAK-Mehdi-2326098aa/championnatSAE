@@ -126,12 +126,17 @@ if (!isset($_SESSION["logIn"])) {
     </ul>
 
 </body>
-<footer class="pied-contact">
+<div class="pied-contact">
     <p>Site sur le département informatique- Tous droits reviennent à Christine Makssoud</a></p>
+</div>
 
 <hr>
-<a href="formulaire.php" id="formulaire-contact"> Nous Contacter ! </a>
-
+<footer>
+    <?php
+    include "footer-amu.php";
+    ?>
 </footer>
+
+</div>
 
 </html>

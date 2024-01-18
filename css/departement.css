@@ -105,11 +105,11 @@ body {
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 2.75em;
     justify-self: center;
     text-align: center;
     color: #e3efef;
-    background-color: black;
+    background: rgba(36,109,154);
     font-weight: bold;
     padding: 1em;
 }
@@ -131,7 +131,7 @@ h4 {
 }
 
 .liste {
-    box-shadow: 1em 2em 5em black;
+    box-shadow: 1em 1em 2em black;
 }
 
 .liste li a {
@@ -162,7 +162,7 @@ h4 {
 .explications p {
     font-weight: 900;
     color: black;
-    box-shadow: 1em 2em 5em black;
+    box-shadow: 1em 1em 2em black;
     background-color: transparent;
     backdrop-filter: blur(10px);
     border: 1px solid white;

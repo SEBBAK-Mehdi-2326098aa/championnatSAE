@@ -1,17 +1,38 @@
 /* style qui s'applique à toutes les pages lorsque nous sommes en mode moderne*/
 
 #formulaire-contact{
+
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-weight: 900;
     font-size: 2em;
-    color: black;
+    color: white;
+}
+footer{
+    background: rgba(36,109,154);
 }
 footer a :hover {
     transition: all ease-in-out;
     color: #318A9A;
 }
-.images-reseaux {
 
+main {
+    padding-bottom: 60px;
+}
+
+#reseaux-amu {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.images-reseaux {
+    border-radius: 50px;
     width: 5%;
+}
+.images-reseaux:hover {
+    cursor: pointer;
+    filter: brightness(0.5);
 }
 
 * {

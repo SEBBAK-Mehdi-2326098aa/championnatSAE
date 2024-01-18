@@ -105,3 +105,9 @@ include "navbar.php";
 
 </div>
 <body>
+
+<footer>
+    <?php
+    include "footer-amu.php";
+    ?>
+</footer>
