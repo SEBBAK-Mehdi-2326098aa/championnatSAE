@@ -101,6 +101,10 @@ foreach ($query->fetchAll() as $avisData) {
 </body>
 <footer>
     <hr>
-    <a href="formulaire.php" id="formulaire-contact"> Nous Contacter ! </a>
+
+    <?php
+    include "footer-amu.php";
+    ?>
+
 </footer>
 </html>

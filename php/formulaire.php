@@ -111,9 +111,12 @@
         </div>
     </form>
 </div>
-
-<!-- Lien avec le javascript pour changer le thème et adapter le menu au format téléphone-->
-<script src="../Javascript/menu.js" defer></script>
 </body>
+<footer>
 
+    <?php
+    include "footer-amu.php";
+    ?>
+
+</footer>
 </html>

@@ -95,7 +95,7 @@ include "navbar.php";
 
 <section class="explications">
     <nav class="sommaire">
-        <h3 id="t2">Parcours de 2ème et 3ème année</h3>
+        <h4 id="t2">Parcours de 2ème et 3ème année</h4>
         <p id="petit-texte">Le département informatique d'Aix-en-Provence propose deux parcours accessible dès la
             2ème année
         </p>
@@ -124,7 +124,12 @@ include "navbar.php";
 <script src="../js/main.js"></script>
 
 <!--footer qui permet de revenir en haut de la page en cliquant sur l'icone-->
-<footer>    <a href="formulaire.php" id="formulaire-contact"> Nous Contacter ! </a>
+<footer>
+
+    <?php
+
+    include 'footer-amu.php';
+    ?>
 </footer>
 
 </html>
