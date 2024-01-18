@@ -50,14 +50,14 @@ include "navbar.php";
             <h2 id="professeur">Annonce Professeur</h2>
             <p> Cette annonce permet aux professeurs de publier des messages destinés aux élèves. En cas d'une absence
                 ou d'une date limite d'un rendu de projet, le professeur en question pourra tenir les étudiants au
-                courant grâce à cete rubrique. </p>
+                courant grâce à cette rubrique. </p>
         </article>
 
         <article class="container">
             <a href="#professeurs"><img src="../assets/flambeau.jpg" alt="Flambeau"></a>
             <h2 id="3annee">Aide des 3eme année</h2>
             <p> Dans cette rubrique, les étudiants de 3ème année pourront proposer leur appartement ou
-                encore leur alternance qu’ils laisseront en partant de l’iut. Les étudiants des autres promotions
+                encore leur alternance qu’ils laisseront en partant de l’IUT. Les étudiants des autres promotions
                 pourront donc reprendre le flambeau de leur aîné. </p>
         </article>
     </div>
@@ -70,10 +70,10 @@ include "navbar.php";
         <h2 class=titresection>INFORM'AIX</h2>
         <p> EVENEMENTS : Le tournoi Smash Bros la semaine prochaine, venez nombreux et <label class="inscription">
                 inscrivez
-                vous ici </label> <br> <br>
+                vous ici.</label> <br> <br>
             EVENEMENTS : La nuit de l'info est terminé, retrouvez tout ces excellents souvenirs sur nos <label
-                    class=inscription>réseaux sociaux</label> <br> <br>
-            INFORMATION : Le stock de nourriture est de nouveau rempli, venez nous rendre visite <br> <br>
+                    class=inscription>réseaux sociaux !</label> <br> <br>
+            INFORMATION : Le stock de nourriture est de nouveau rempli, venez nous rendre visite ! <br> <br>
             INFORMATION : Les Kinder Bueno sont en réduction de 50% Venez vite avant que ça parte. <br> <br>
             EVENEMENTS : Les éléctions de l'IUT sont terminés, venez voir les <label class=inscription> résulats ici
             </label> !
@@ -87,8 +87,8 @@ include "navbar.php";
         <h2 class=titresection>Annonce Tutorat</h2>
         <p>
             RECHERCHER TUTORAT : J'aurais besoin d'un tutorat pour réviser les maths, je suis libre le mardi et
-            jeudi soir <br> <br>
-            TUTORAT : Un tutorat sur le C++ aura lieu Lundi après les cours en TP I-010 <br> <br>
+            jeudi soir. <br> <br>
+            TUTORAT : Un tutorat sur le C++ aura lieu Lundi après les cours en TP I-010. <br> <br>
             TUTORAT : Je ferais un tutorat en communication sur discord, venez nombeux ! <label class=inscription> lien
                 vers le tutorat </label> <br> <br>
         </p>
@@ -99,10 +99,10 @@ include "navbar.php";
 
         <h2 class=titresection>Annonce des Professeurs</h2>
         <p>
-            INFORMATION : Monsieur LAKHAL sera indisponible les 2 prochaines semaines <br> <br>
+            INFORMATION : Monsieur LAKHAL sera indisponible les 2 prochaines semaines. <br> <br>
             INFORMATION : La SAE 1.02 est à rendre lundi 12 janvier à 12h, DERNIER DELAIS !!<br><br>
             INFORMATION : Examen de SQL le Vendredi 25 février de 8h à 10h en salle d'examen. <br><br>
-            INFORMATION : QCM de maths discrete sur Ametice <br><br>
+            INFORMATION : QCM de maths discrete sur Ametice. <br><br>
         </p>
 
     </div>
@@ -112,13 +112,13 @@ include "navbar.php";
         <h2 class=titresection>Aide des 3ème année</h2>
         <p> APPARTEMENT : Nous laissons un appartement au 4 rue du Pommier à Aix-en-provence. Collocation de 4-5
             maximums. Si vous êtes intéressé(es), <label class="inscription">
-                contactez-nous </label> <br> <br>
+                contactez-nous. </label> <br> <br>
             APPARTEMENT : Appartement 2 pièces se libère le 3 août, il se situe dans le centre de Venelles. Pour plus
-            d'information, <label class=inscription>cliquez ici</label> <br> <br>
+            d'informations, <label class=inscription>cliquez ici.</label> <br> <br>
             ALTERNANCE : Une place se libère dans l'entreprise AMAZON, <label class="inscription">
-                contactez-moi </label> <br> <br>
-            ALTERNANCE : 3 places vont se libérer pour l'alternance dans l'entreprise IPSSI <label class="inscription">
-                contactez-les </label><br> <br>
+                contactez-moi. </label> <br> <br>
+            ALTERNANCE : 3 places vont se libérer pour l'alternance dans l'entreprise IPSSI, <label class="inscription">
+                contactez-les. </label><br> <br>
         </p>
     </div>
 
