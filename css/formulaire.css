@@ -23,7 +23,7 @@ form h1 {
 form .separation {
     width: 100%;
     height: 1px;
-    background-color: rgb(18, 6, 243);
+    background-color: #8F1738;
 
 }
 
@@ -45,7 +45,7 @@ form .corps_formulaire .gauche .groupe input {
     margin-top: 0.5em;
     padding: 10px 5px 10px 30px;
     border: 1px solid #c9c9c9;
-    outline-color: rgba(18, 6, 243);
+    outline-color: #8F1738;
     border-radius: 5px;
 }
 
@@ -54,7 +54,7 @@ form .corps_formulaire .gauche .groupe i {
     left: 0;
     top: 25px;
     padding: 9px 8px;
-    color: rgba(18, 6, 243, 0.669);
+    color: #8F1738;
 }
 
 form .corps_formulaire .droite {
@@ -72,7 +72,7 @@ form .corps_formulaire .droite .groupe textarea {
     resize: none;
     height: 71%;
     background-color: #f8f8f8;
-    border: 1px solid rgb(18, 6, 243);
+    border: 1px solid #8F1738;
     border-radius: 5px;
 
 }
@@ -82,14 +82,15 @@ form .pied_formulaire button {
     font-size: 15px;
     border: none;
     outline: none;
-    background-color: rgb(18, 6, 243);
+    background-color: #8F1738;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
+    padding: 5px;
 }
 
 form .pied_formulaire button:hover {
     transform: scale(1.05);
     transition: all 0.5s ease;
-    background-color: rgb(7, 2, 88);
+    background-color: #8F1738;
 }

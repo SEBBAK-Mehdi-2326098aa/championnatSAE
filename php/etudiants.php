@@ -32,31 +32,33 @@ include "navbar.php";
 
 
         <article class="container">
-            <a href="#informaix"><img src="../assets/logoInformaix_1.png" alt="InformAix"></a>
+            <a href="#sections"><img src="../assets/logoInformaix_1.png" alt="InformAix"></a>
             <h2>InformAix</h2>
-            <p> Dans cette rubrique, les membres du BDE (bureau des étudiants) pourra mettre en ligne des annonce </p>
+            <p> Dans cette rubrique, les membres du BDE (bureau des étudiants) pourront mettre en ligne des annonces
+                afin de prévenir les étudiants des nouveautés tels que les évènements, les ventes,... </p>
         </article>
 
         <article class="container">
             <a href="#informaix"><img src="../assets/entraide_1610555060918-jpg.png" alt="entraide"></a>
             <h2>Tutorat</h2>
-            <p>Les informations concernant les tutorats seront transmise ici </p>
+            <p>Les informations concernant les tutorats seront retransmise ici. Les élèves pourront demander un tutorat
+                ou encore un tuteur.</p>
         </article>
 
         <article class="container">
             <a href="#tutorat"><img src="../assets/image_teacher.jpg" alt="Teacher"></a>
             <h2 id="professeur">Annonce Professeur</h2>
-            <p>loremdhjocbozhjfjhzfvjh zfvjohzb fvhz fvo fvojhz efvohjz fvnj rfhjv zfohv zofhv hozrfv ovokhzrv ohkrzgf
-                vohjzr vpjhr gfbprfgbp rgpbjn erpgj nphgbprgbpjrgbprfgpfgpkb eprgb pdfg bhp frgbpd fgbp fgp rfpgjb
-                erpbpgbprj gbpzrgbpzrj gbkpzrjgbjrgbj rg zrkjgnbkjr gbpf gbnkpdfgpkb dfklb </p>
+            <p> Cette annonce permet aux professeurs de publier des messages destinés aux élèves. En cas d'une absence
+                ou d'une date limite d'un rendu de projet, le professeur en question pourra tenir les étudiants au
+                courant grâce à cete rubrique. </p>
         </article>
 
         <article class="container">
             <a href="#professeurs"><img src="../assets/flambeau.jpg" alt="Flambeau"></a>
             <h2 id="3annee">Aide des 3eme année</h2>
-            <p>loremdhjocbozhjfjhzfvjh zfvjohzb fvhz fvo fvojhz efvohjz fvnj rfhjv zfohv zofhv hozrfv ovokhzrv ohkrzgf
-                vohjzr vpjhr gfbprfgbp rgpbjn erpgj nphgbprgbpjrgbprfgpfgpkb eprgb pdfg bhp frgbpd fgbp fgp rfpgjb
-                erpbpgbprj gbpzrgbpzrj gbkpzrjgbjrgbj rg zrkjgnbkjr gbpf gbnkpdfgpkb dfklb </p>
+            <p> Dans cette rubrique, les étudiants de 3ème année pourront proposer leur appartement ou
+                encore leur alternance qu’ils laisseront en partant de l’iut. Les étudiants des autres promotions
+                pourront donc reprendre le flambeau de leur aîné. </p>
         </article>
     </div>
 
