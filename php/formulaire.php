@@ -29,6 +29,46 @@
 
 <body>
 
+<div class="cards">
+    <div class="contrainer">
+        <div class="carde">
+            <div class="card-top">
+                <img class="img_contact" src="../img/pic.png" alt="">
+            </div>
+            <br> <br>
+            <div class="card-infos">
+                <h2 class="name">Samuele ANNI</h2>
+                <h3 class="job">Directeur des études BUT 1</h3>
+                <p class="quote">Email</p>
+            </div>
+            <div class="button">
+                <button>Contact</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="contrainer">
+        <div class="carde">
+            <div class="card-top">
+                <img class="img_contact" src="../img/pic.png" alt="">
+            </div>
+            <br> <br>
+            <div class="card-infos">
+                <h2 class="name jsp">Christine MAKSSOUD</h2>
+                <h3 class="job">Chef du département</h3>
+                <p class="quote">Email</p>
+            </div>
+            <div class="button">
+                <button>Contact</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 <!-- Formaulaire -->
 <div class="container_formulaire">
     <form id="form"

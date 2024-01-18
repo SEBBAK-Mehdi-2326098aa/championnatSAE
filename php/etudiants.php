@@ -99,7 +99,7 @@ include "navbar.php";
 
         <h2 class=titresection>Annonce des Professeurs</h2>
         <p>
-            INFORMATION : Monsieur Lakal sera indisponible les 2 prochaines semaines <br> <br>
+            INFORMATION : Monsieur LAKHAL sera indisponible les 2 prochaines semaines <br> <br>
             INFORMATION : La SAE 1.02 est à rendre lundi 12 janvier à 12h, DERNIER DELAIS !!<br><br>
             INFORMATION : Examen de SQL le Vendredi 25 février de 8h à 10h en salle d'examen. <br><br>
             INFORMATION : QCM de maths discrete sur Ametice <br><br>
