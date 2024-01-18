@@ -106,15 +106,15 @@ img {
 .menu li a:hover {
     border: solid white;
     display: block;
-    color: white;
+    color: orange;
     transform: scale(1.1);
 
 }
 
 /* colore la case du menu correspondant à la page affichée*/
-.actual {
+#actual {
     border: solid;
-    color: white;
+    color: orange;
     font-weight: bold;
     text-decoration: none;
     border-radius: 15px;
@@ -166,7 +166,7 @@ img {
 
     .menuDeroulantActif li a:hover {
 
-        color: white;
+        color: orange;
         background: lightseagreen;
         transform: scale(1.1);
 

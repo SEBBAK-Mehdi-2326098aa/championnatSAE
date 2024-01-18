@@ -1,7 +1,7 @@
 <?php
 echo'
 <html>
-<link rel="stylesheet" href="../css/style.css">
+
 
 <a href="formulaire.php" id="formulaire-contact"> Nous Contacter ! </a>
 

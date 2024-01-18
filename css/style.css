@@ -100,7 +100,7 @@ header {
 .menu li a:hover {
     border: solid white;
     display: block;
-    color: black;
+    color: orange;
     transform: scale(1.1);
 
 }
@@ -108,7 +108,7 @@ header {
 /* colore la case du menu correspondant à la page affichée*/
 .actual {
     border: solid;
-    color: black;
+    color: orange;
     font-weight: bold;
     text-decoration: none;
     border-radius: 15px;
