@@ -9,6 +9,11 @@ footer a :hover {
     transition: all ease-in-out;
     color: #318A9A;
 }
+.images-reseaux {
+
+    width: 5%;
+}
+
 * {
     font-family: Klavika Basic ;
     margin: 0;
@@ -47,14 +52,6 @@ header {
     cursor: pointer;
     z-index: 5001;
 }
-
-img {
-    width: 5%;
-    height: auto;
-    border-radius: 50px;
-}
-
-
 
 /* partie qui dimensionne le logo et le fait tourner en continu*/
 .logo {
@@ -111,7 +108,7 @@ img {
 /* colore la case du menu correspondant à la page affichée*/
 .actual {
     border: solid;
-    color: white;
+    color: black;
     font-weight: bold;
     text-decoration: none;
     border-radius: 15px;
@@ -151,7 +148,7 @@ img {
     }
 
     .menuDeroulantActif li a {
-        color: white;
+        color: black ;
         font-weight: bold;
         border-radius: 15px;
         padding: 0.3em;
@@ -197,3 +194,4 @@ img {
         transform: scale(1.05);
     }
 }
+

@@ -104,10 +104,10 @@ include "navbar.php";
 <hr>
 <footer>
 
-    <a href="formulaire.php" id="formulaire-contact"> Nous Contacter ! </a>
+    <?php
+    include "footer-amu.php";
+    ?>
 
-
-    </section>
 </footer>
 </body>
 

@@ -24,7 +24,7 @@ include "navbar.php";
 
 <main>
     <section id="intro">
-        <h1>Annonce Etudiantes</h1>
+        <h1>Annonces</h1>
         <p> Cette section permet de voir les actualités du département ! </p>
     </section>
 
